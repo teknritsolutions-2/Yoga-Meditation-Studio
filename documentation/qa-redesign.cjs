@@ -82,6 +82,7 @@ const fs = require("node:fs");
   await p.keyboard.press("Escape");
   await p.locator(".week-card [data-book]").first().click();
   await p.waitForFunction(() => location.pathname.endsWith("/dashboard.html"));
+  await p.locator("#modal").waitFor({ state: "visible" });
   assert(await p.locator("#modal").isVisible());
   assert.equal(
     await p.locator("#modal [data-book]").getAttribute("data-book"),

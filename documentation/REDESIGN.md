@@ -43,6 +43,12 @@ Reviewed sheets: [320](targeted-review/review-320-light.png), [390](targeted-rev
 
 Machine-readable evidence: [redesign-results.json](redesign-results.json). Sources/license details: [ASSET-CREDITS.md](ASSET-CREDITS.md). Historical reports describe earlier interfaces and are marked accordingly.
 
+## Published-site verification
+
+The [GitHub Pages deployment](https://github.com/teknritsolutions-2/Yoga-Meditation-Studio/actions/runs/42599764237) for runtime commit `0b66b9c` succeeded. All nine live URLs returned HTTP 200; images decoded, mobile layouts had no document overflow, and no failed asset responses or browser JavaScript errors were observed. The six-group targeted interaction suite also passed against the deployed repository subpath, including selected-session transfer into the dashboard and accurate unconnected authentication feedback. The browser test waits for the class dialog after deferred dashboard initialization.
+
+[Open the published site](https://teknritsolutions-2.github.io/Yoga-Meditation-Studio/).
+
 ## Reproduce and limits
 
 Start the static server as described in README. Install Playwright outside this project, set `SOLA_PLAYWRIGHT` to its module path and optionally `SOLA_BROWSER` to a Chromium executable, then run the `documentation/qa-*.cjs` scripts. `SOLA_QA_OUTPUT` selects the output folder.

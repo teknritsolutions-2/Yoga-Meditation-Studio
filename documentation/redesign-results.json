@@ -1139,5 +1139,33 @@
     "references": 164,
     "missing": [],
     "javascriptFiles": 9
+  },
+  "liveRoutes": {
+    "checks": [
+      "index.html HTTP 200, assets decoded, no overflow",
+      "pages/home2.html HTTP 200, assets decoded, no overflow",
+      "pages/classes.html HTTP 200, assets decoded, no overflow",
+      "pages/instructors.html HTTP 200, assets decoded, no overflow",
+      "pages/memberships.html HTTP 200, assets decoded, no overflow",
+      "pages/contact.html HTTP 200, assets decoded, no overflow",
+      "pages/login.html HTTP 200, assets decoded, no overflow",
+      "pages/signup.html HTTP 200, assets decoded, no overflow",
+      "pages/dashboard.html HTTP 200, assets decoded, no overflow",
+      "Live direct dashboard, six credits, hidden closed RTL drawer",
+      "Live selected-day explorer"
+    ],
+    "errors": [],
+    "responses": []
+  },
+  "liveInteractions": {
+    "checks": [
+      "Seven consecutive Monday\u2013Sunday dates each expose the matching four catalog sessions",
+      "Keyboard/RTL day selection and View/Book preserve the selected session through direct dashboard access",
+      "All four comparison plans retain correct capped/unlimited math at frequencies 1, 3, and 7",
+      "Separate auth pages: native validation, confirmation matching, password visibility, 320px options row, actual provider logos, accurate unconnected feedback, no credential transmission/storage",
+      "Direct dashboard remains accessible with its own navigation and unchanged six-credit balance",
+      "Removed motion/practice widgets, logical footer groups, and reduced-motion entrance behavior"
+    ],
+    "errors": []
   }
 }

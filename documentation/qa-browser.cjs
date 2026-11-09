@@ -229,6 +229,7 @@ const ROOT = "http://127.0.0.1:4173";
     .getAttribute("data-book");
   await p.locator("[data-book]").first().click();
   await p.waitForFunction(() => location.pathname.endsWith("/dashboard.html"));
+  await p.locator("#modal").waitFor({ state: "visible" });
   assert(await p.locator("#modal").isVisible());
   assert((await p.locator("#modal-body").textContent()).includes("Hatha Yoga"));
   checks.push(
