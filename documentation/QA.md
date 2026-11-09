@@ -1,4 +1,6 @@
-# Verification report
+# Initial verification report
+
+Historical initial implementation results. See [REDESIGN.md](REDESIGN.md) for current behavior and the latest tests. Some original UI controls described below were deliberately replaced.
 
 Completed 9 November 2026 using Playwright with the installed Brave/Chromium browser in headless mode, served through Python's static HTTP server. Test tools were installed in `/tmp`, outside the production project.
 

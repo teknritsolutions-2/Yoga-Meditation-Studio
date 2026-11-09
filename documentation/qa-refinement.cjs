@@ -19,10 +19,11 @@ const fs = require("fs");
     ["home", "index.html", null],
     ["home2", "pages/home2.html", "#practice-finder"],
     ["classes", "pages/classes.html", "#class-filters"],
-    ["instructors", "pages/instructors.html", ".spotlight"],
+    ["instructors", "pages/instructors.html", ".guide-feature"],
     ["memberships", "pages/memberships.html", ".membership-all"],
     ["contact", "pages/contact.html", "#contact-form"],
     ["login", "pages/login.html", null],
+    ["signup", "pages/signup.html", null],
     ["dashboard", "pages/dashboard.html", null],
   ];
   for (const [name, file, focus] of pages) {
@@ -41,6 +42,7 @@ const fs = require("fs");
           document.documentElement.dataset.theme = mode;
           document.documentElement.dir = "ltr";
         }, mode);
+        await p.evaluate(() => scrollTo(0, 0));
         if (focus)
           await p.evaluate(
             (s) =>
@@ -55,7 +57,7 @@ const fs = require("fs");
               }),
             focus,
           );
-        await p.waitForTimeout(70);
+        await p.waitForTimeout(750);
         const metrics = await p.evaluate(() => ({
           overflow: document.documentElement.scrollWidth > innerWidth + 1,
           broken: [...document.images]

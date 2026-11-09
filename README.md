@@ -10,24 +10,25 @@ From this directory:
 python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-Open `http://127.0.0.1:4173`. Use HTTP preview for consistent local demo storage across pages. The server is a development convenience only.
+Open `http://127.0.0.1:4173`. Use HTTP preview for consistent local workspace storage across pages. The server is a development convenience only.
 
 ## Pages
 
-| File                     | Experience                                                         |
-| ------------------------ | ------------------------------------------------------------------ |
-| `index.html`             | Home 1 — studio atmosphere, interactive practices, weekly preview  |
-| `pages/home2.html`       | Home 2 — personal practice finder, studio day, workshop concept    |
-| `pages/classes.html`     | Class filters, two-week sample schedule, timetable, detail dialogs |
-| `pages/instructors.html` | Editorial sample guide directory                                   |
-| `pages/memberships.html` | Four sample plans and usage-based comparison                       |
-| `pages/contact.html`     | Visit information and local enquiry preview                        |
-| `pages/login.html`       | Sign-in presentation and explicit demo access                      |
-| `pages/dashboard.html`   | Member workspace with seven functional sections                    |
+| File                     | Experience                                                        |
+| ------------------------ | ----------------------------------------------------------------- |
+| `index.html`             | Home 1 — studio atmosphere, interactive practices, weekly preview |
+| `pages/home2.html`       | Home 2 — personal practice finder, studio day, workshop concept   |
+| `pages/classes.html`     | Class filters, two-week catalog, selected-day weekly explorer     |
+| `pages/instructors.html` | Editorial practice-led guide showcase                             |
+| `pages/memberships.html` | Four indicative plans and usage-based comparison                  |
+| `pages/contact.html`     | Visit information and local enquiry preview                       |
+| `pages/login.html`       | Standalone validated login form (provider not connected)          |
+| `pages/signup.html`      | Separate validated sign-up form (provider not connected)          |
+| `pages/dashboard.html`   | Member workspace with seven functional sections                   |
 
-## Demo behaviour
+## Frontend workspace behavior
 
-Choose **Explore demo member dashboard**; credentials are unnecessary. The initial member has a Ten-Class Pack: 10 credits, 3 attended sample classes, 1 upcoming booking, and 6 available credits.
+Choose **Member Dashboard** in the footer or open `pages/dashboard.html` directly. There is no login gate. The initial member has a Ten-Class Pack: 10 credits, 3 attended sample classes, 1 upcoming booking, and 6 available credits.
 
 - Booking holds one credit. Duplicate, overlapping, past, out-of-validity, and exhausted-credit bookings are blocked.
 - Cancelling an upcoming demo session restores its credit once. This is an illustrative cancellation policy.
@@ -35,11 +36,11 @@ Choose **Explore demo member dashboard**; credentials are unnecessary. The initi
 - Past bookings retain session snapshots and move to elapsed history as dates advance.
 - Renewal previews create local requests. They do not charge, renew, or change an active plan.
 - Settings can load fresh sample plan models or reset the dataset. Loading a sample is explicitly separate from purchasing or renewing a membership.
-- Non-sensitive demo state is kept under `sola-*` localStorage keys. Demo access uses sessionStorage unless remembered. Theme and direction persist separately.
+- Non-sensitive demo state is kept under `sola-*` localStorage keys. The internal workspace marker uses sessionStorage; it is not an authenticated session. Theme and direction persist separately.
 - If storage is unavailable, the dashboard offers an in-memory fallback and explains the persistence limit.
-- The sign-in presentation never authenticates, sends, or stores credentials. The enquiry form only previews its contents and does not retain or send them.
+- Login, sign-up, password recovery, and Google/Apple buttons validate or show accurate unconnected feedback; they never authenticate, send, or store credentials. The enquiry form only previews its contents and does not retain or send them.
 
-The schedule is generated for the next 14 days in **Asia/Kolkata**, with four sessions a day. All visible times are IST. Capacity figures, people, workshop concepts, and prices are illustrative. No real seats are reserved.
+The schedule is generated for the next 14 days in **Asia/Kolkata**, with four sessions a day. All visible times are IST. People, workshop concepts, and prices are illustrative. No live capacity is displayed. No real seats are reserved.
 
 ## Edit content
 
@@ -49,7 +50,9 @@ The schedule is generated for the next 14 days in **Asia/Kolkata**, with four se
 - `assets/js/booking.js`: local state, eligibility, credit accounting, cancellation.
 - `assets/js/dashboard.js`: member workspace sections.
 - `assets/js/public.js`: public-page interactions.
-- `assets/js/main.js`: shared navigation, footer, theme, direction, motion, dialogs.
+- `assets/js/schedule.js`: Monday–Sunday day tabs and selected-day session cards.
+- `assets/js/auth.js`: standalone form validation and honest unconnected action feedback.
+- `assets/js/main.js`: shared navigation, footer, theme, direction, dialogs.
 - Physical HTML files: public editorial content.
 - `assets/css/style.css`: shared components, public compositions, dashboard, responsive rules.
 
@@ -65,4 +68,4 @@ URLs and local font/image paths work under a repository subpath as well as a dom
 
 ## Verification and asset records
 
-See `documentation/REFINEMENT.md` for the finishing-pass report and visual evidence, plus `documentation/QA.md`, `documentation/ARCHITECTURE.md`, and `documentation/ASSET-CREDITS.md`. Open-font license notices are included in `assets/fonts/`.
+See `documentation/REDESIGN.md` for the latest targeted redesign, test results, and visual evidence. Earlier records are in `documentation/REFINEMENT.md` and `documentation/QA.md`. Technical details and sources are in `documentation/ARCHITECTURE.md`, and `documentation/ASSET-CREDITS.md`. Open-font license notices are included in `assets/fonts/`.

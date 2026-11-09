@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Sign Up — Sola Studio member access." />
+    <meta name="theme-color" content="#FCF7EE" />
+    <title>Sign Up · Sola Studio</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/graphics/logo.svg" />
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <link rel="stylesheet" href="../assets/css/auth.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          JSON.parse(localStorage.getItem("sola-theme")) || "light";
+        document.documentElement.dir =
+          JSON.parse(localStorage.getItem("sola-direction")) || "ltr";
+      } catch (e) {}
+    </script>
+    <script defer src="../assets/js/site-config.js"></script>
+    <script defer src="../assets/js/main.js"></script>
+    <script defer src="../assets/js/auth.js"></script>
+  </head>
+  <body data-page="signup" class="auth-page">
+    <a class="skip" href="#main">Skip to content</a>
+    <div
+      class="auth-utilities"
+      id="auth-utilities"
+      aria-label="Display preferences"
+    ></div>
+    <main class="auth-shell" id="main">
+      <section class="auth-card" aria-labelledby="auth-title">
+        <div class="brand auth-brand" aria-label="Sola Studio">
+          <img
+            src="../assets/graphics/logo.svg"
+            alt=""
+            width="39"
+            height="39"
+          /><span>sola<span class="brand-sub">STUDIO</span></span>
+        </div>
+        <h1 id="auth-title">Sign Up</h1>
+        <form id="auth-form" data-auth-mode="signup">
+          <div class="field">
+            <label for="full-name">Full Name</label
+            ><input
+              id="full-name"
+              name="full-name"
+              type="text"
+              autocomplete="name"
+              placeholder="Your full name"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="auth-email">Email</label
+            ><input
+              id="auth-email"
+              name="auth-email"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="auth-password">Password</label>
+            <div class="auth-password">
+              <input
+                id="auth-password"
+                name="auth-password"
+                type="password"
+                autocomplete="new-password"
+                placeholder="At least 8 characters"
+                required
+                minlength="8"
+                data-password
+              /><button
+                type="button"
+                class="password-toggle"
+                data-password-toggle="auth-password"
+                aria-controls="auth-password"
+                aria-pressed="false"
+                aria-label="Show password"
+              ></button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="confirm-password">Confirm Password</label>
+            <div class="auth-password">
+              <input
+                id="confirm-password"
+                name="confirm-password"
+                type="password"
+                autocomplete="new-password"
+                placeholder="Re-enter your password"
+                required
+                minlength="8"
+                data-password
+              /><button
+                type="button"
+                class="password-toggle"
+                data-password-toggle="confirm-password"
+                aria-controls="confirm-password"
+                aria-pressed="false"
+                aria-label="Show confirm password"
+              ></button>
+            </div>
+          </div>
+          <button class="btn auth-submit" type="submit">Create Account</button>
+        </form>
+        <p
+          id="auth-feedback"
+          class="auth-feedback"
+          role="status"
+          aria-live="polite"
+          hidden
+        ></p>
+        <div class="auth-divider">Or continue with</div>
+        <div class="auth-social">
+          <button type="button" class="social-button" data-provider="Google">
+            <img
+              src="../assets/graphics/google.png"
+              alt=""
+              width="20"
+              height="20"
+            />Continue with Google</button
+          ><button type="button" class="social-button" data-provider="Apple">
+            <img
+              class="apple-logo"
+              src="../assets/graphics/apple.svg"
+              alt=""
+              width="20"
+              height="20"
+            />Continue with Apple
+          </button>
+        </div>
+        <p class="auth-switch">
+          Already have an account? <a href="login.html">Sign In</a>
+        </p>
+      </section>
+    </main>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal" aria-label="Password recovery">
+      <button class="icon-btn modal-close" aria-label="Close dialog">×</button>
+      <div id="modal-body"></div>
+    </dialog>
+    <noscript
+      ><p class="notice">
+        Enable JavaScript to use form validation and password visibility
+        controls.
+      </p></noscript
+    >
+  </body>
+</html>

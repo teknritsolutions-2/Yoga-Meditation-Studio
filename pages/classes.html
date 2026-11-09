@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="description"
-      content="Explore yoga, meditation, and breathwork by style, level, and time. Browse Sola’s preview timetable and try the member demo."
+      content="Explore yoga, meditation, and breathwork by style, level, and time. Browse Sola’s weekly timetable."
     />
     <meta name="theme-color" content="#FCF7EE" />
     <title>Find your next class · Sola Studio</title>
@@ -27,13 +27,14 @@
     <script defer src="../assets/js/membership-data.js"></script>
     <script defer src="../assets/js/booking.js"></script>
     <script defer src="../assets/js/main.js"></script>
+    <script defer src="../assets/js/schedule.js"></script>
     <script defer src="../assets/js/public.js"></script>
   </head>
   <body data-page="classes">
     <a class="skip" href="#main">Skip to content</a>
     <header class="site-header" id="site-header"></header>
     <main id="main">
-      <section class="wrap page-intro">
+      <section class="wrap page-intro class-intro">
         <div class="intro-row">
           <div>
             <span class="eyebrow">A practice for every kind of day</span>
@@ -44,8 +45,8 @@
             </p>
           </div>
           <img
-            class="intro-art"
-            src="../assets/graphics/organic-spiral.svg"
+            class="class-banner-art"
+            src="../assets/graphics/solar-orbit.svg"
             alt=""
             aria-hidden="true"
           />
@@ -58,8 +59,7 @@
           aria-label="Filter by practice category"
         ></div>
         <p class="schedule-note">
-          Preview timetable · Times in IST. Availability is illustrative;
-          bookings are local demonstrations.
+          Find a class that fits your day. All times are shown in IST.
         </p>
         <form class="filters" id="class-filters">
           <div class="field">
@@ -103,14 +103,8 @@
               <h2>A little structure.<br /><em>A lot of possibility.</em></h2>
             </div>
           </div>
-          <p class="scroll-hint">Scroll across to explore the full week →</p>
-          <div
-            class="timetable"
-            id="weekly-timetable"
-            tabindex="0"
-            role="region"
-            aria-label="Weekly class timetable, scroll horizontally on small screens"
-          ></div>
+
+          <div class="weekly-explorer" id="weekly-timetable"></div>
         </div>
       </section>
       <section class="wrap section">
@@ -139,12 +133,11 @@
               </p>
             </details>
             <details>
-              <summary>How does demo booking work?</summary>
+              <summary>How do I plan a class?</summary>
               <p>
-                Choose a session and open the demo member dashboard. One credit
-                is held per eligible booking. Cancel any time before the sample
-                session starts to restore your credit. This is a demonstration
-                policy only.
+                Choose a session to add it to your practice schedule. The
+                current workspace saves plans on your device; confirm actual
+                reservations and cancellation terms with the studio.
               </p>
             </details>
             <details>
@@ -179,9 +172,7 @@
     </dialog>
     <noscript
       ><p class="notice">
-        JavaScript is required for navigation controls, class schedules, and the
-        local demo dashboard. Please enable JavaScript to explore the full
-        experience.
+        Enable JavaScript to explore class schedules and the member workspace.
       </p></noscript
     >
   </body>

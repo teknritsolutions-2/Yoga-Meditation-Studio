@@ -86,7 +86,7 @@ function exitDemo() {
     sessionStorage.removeItem("sola-demo");
     localStorage.removeItem("sola-remember-demo");
   } catch {}
-  location.href = pageURL("home");
+  location.href = pageURL("login");
 }
 function toast(message) {
   const el = $("#toast");

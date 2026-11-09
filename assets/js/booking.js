@@ -103,13 +103,13 @@ function bookingMessage(sessionId) {
   const s = getState(),
     slot = SESSIONS.find((x) => x.id === sessionId);
   if (!slot)
-    return "This sample session is no longer available. Choose another class.";
+    return "This session is no longer available. Choose another class.";
   if (new Date(slot.start) <= new Date())
     return "This session has already started. Choose an upcoming class.";
   if (new Date(slot.start) > new Date(s.expires))
-    return "This session falls outside your demo membership validity.";
+    return "This session falls outside your membership validity.";
   if (activeBookings(s).some((b) => b.session === sessionId))
-    return "This class is already in your demo schedule.";
+    return "This class is already in your schedule.";
   if (credits(s) !== null && credits(s) <= 0)
     return "You have no remaining class credits. Review your membership options.";
   const end =
@@ -143,13 +143,14 @@ function addBooking(sessionId) {
     created: new Date().toISOString(),
   });
   s.notifications.unshift({
-    text: practiceFor(slot).name + " added to your local demo schedule.",
+    text: practiceFor(slot).name + " added to your local practice plan.",
     date: new Date().toISOString(),
   });
   saveState(s);
   return {
     ok: true,
-    message: "Added to your demo schedule. No studio seat has been reserved.",
+    message:
+      "Added to your schedule on this device. No studio seat has been reserved.",
   };
 }
 function cancelBooking(id) {
@@ -161,26 +162,25 @@ function cancelBooking(id) {
   if (slot && new Date(slot.start) <= new Date())
     return {
       ok: false,
-      message: "Only upcoming demo sessions can be cancelled.",
+      message: "Only upcoming sessions can be cancelled.",
     };
   b.status = "cancelled";
   s.notifications.unshift({
     text:
-      "Demo booking cancelled." +
-      (b.charged ? " One class credit restored." : ""),
+      "Booking cancelled." + (b.charged ? " One class credit restored." : ""),
     date: new Date().toISOString(),
   });
   saveState(s);
   return {
     ok: true,
     message:
-      "Demo session cancelled." +
+      "Session cancelled." +
       (b.charged ? " Your credit has been restored." : ""),
   };
 }
 function bookAction(id) {
   if (!isDemo()) {
-    location.href = pageURL("login", "?class=" + encodeURIComponent(id));
+    location.href = pageURL("dashboard", "?class=" + encodeURIComponent(id));
     return;
   }
   const result = addBooking(id);
@@ -193,7 +193,7 @@ function classDetails(id) {
   const p = practiceFor(s),
     g = guideFor(p);
   dialog(
-    `<span class="eyebrow">${p.category} · ${p.level}</span><h2>${p.name}</h2><p>${p.desc}</p><dl class="details-list"><div><dt>Your guide</dt><dd>${g.name}</dd></div><div><dt>When</dt><dd>${dateLabel(s.start)} · ${timeLabel(s.start)} IST</dd></div><div><dt>Duration</dt><dd>${p.duration} minutes</dd></div><div><dt>Capacity</dt><dd>${s.capacity - s.sampleOccupied} illustrative spaces of ${s.capacity}</dd></div></dl><p class="notice">Sample schedule. Availability is illustrative; local demo bookings do not reserve a real seat.</p><button class="btn" data-book="${s.id}">Add to demo schedule ${icon("arrow")}</button>`,
+    `<span class="eyebrow">${p.category} · ${p.level}</span><h2>${p.name}</h2><p>${p.desc}</p><dl class="details-list"><div><dt>Your guide</dt><dd>${g.name}</dd></div><div><dt>When</dt><dd>${dateLabel(s.start)} · ${timeLabel(s.start)} IST</dd></div><div><dt>Duration</dt><dd>${p.duration} minutes</dd></div><div><dt>Reservations</dt><dd>Confirm availability with the studio</dd></div></dl><p class="notice">Reservations are not connected. Adding a class saves it on this device only.</p><button class="btn" data-book="${s.id}">Add to my schedule ${icon("arrow")}</button>`,
   );
 }
 function sessionRows(slots, { cancel = false } = {}) {

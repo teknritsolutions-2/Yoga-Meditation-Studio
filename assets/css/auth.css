@@ -1,0 +1,203 @@
+.auth-page {
+  min-height: 100svh;
+  background: var(--bg);
+}
+.auth-shell {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 64px 24px;
+}
+.auth-utilities {
+  position: absolute;
+  inset-block-start: 18px;
+  inset-inline-end: 22px;
+  display: flex;
+  gap: 8px;
+}
+.auth-card {
+  width: 100%;
+  max-width: 490px;
+  padding: 38px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+.auth-brand {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin-inline: auto;
+  margin-bottom: 32px;
+}
+.auth-card h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.auth-card form {
+  display: grid;
+  gap: 20px;
+}
+.auth-card .field {
+  min-width: 0;
+  gap: 9px;
+}
+.auth-password {
+  position: relative;
+}
+.auth-password input {
+  padding-inline-end: 56px !important;
+}
+.password-toggle {
+  position: absolute;
+  inset-inline-end: 5px;
+  inset-block-start: 3px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  border-radius: 5px;
+}
+.auth-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.auth-options .checkbox-field {
+  align-items: center;
+  white-space: nowrap;
+}
+.auth-options input {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+}
+.auth-options a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: var(--clay);
+}
+.auth-submit {
+  width: 100%;
+  margin-top: 2px;
+}
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--muted);
+  font-size: 14px;
+  margin-block: 24px;
+}
+.auth-divider:before,
+.auth-divider:after {
+  content: "";
+  height: 1px;
+  background: var(--line);
+  flex: 1;
+}
+.auth-social {
+  display: grid;
+  gap: 12px;
+}
+.social-button {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  background: var(--paper);
+}
+.social-button:hover {
+  background: var(--surface);
+}
+.social-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+[data-theme="dark"] .apple-logo {
+  filter: invert(1);
+}
+.auth-switch {
+  text-align: center !important;
+  font-size: 15px;
+  margin-top: 26px;
+}
+.auth-switch a {
+  color: var(--clay);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.auth-feedback {
+  font-size: 14px;
+  color: var(--clay);
+  margin-top: 20px;
+  line-height: 1.65;
+}
+.recovery-form {
+  display: grid;
+  gap: 22px;
+  margin-top: 24px;
+}
+.recovery-form .auth-feedback {
+  margin: 0;
+}
+@media (max-width: 480px) {
+  .auth-shell {
+    padding: 78px 18px 24px;
+    place-items: start center;
+  }
+  .auth-card {
+    padding: 30px 24px;
+    border-radius: 12px;
+  }
+  .auth-card h1 {
+    font-size: 36px;
+  }
+  .auth-brand {
+    margin-bottom: 28px;
+  }
+  .auth-utilities {
+    inset-block-start: 16px;
+    inset-inline-end: 18px;
+  }
+  .auth-options {
+    font-size: 14px;
+    gap: 8px;
+  }
+  .auth-options .checkbox-field {
+    font-size: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .auth-shell {
+    padding-inline: 14px;
+  }
+  .auth-card {
+    padding-inline: 20px;
+  }
+  .auth-card h1 {
+    font-size: 34px;
+  }
+  .auth-options {
+    font-size: 13px;
+  }
+  .auth-options .checkbox-field {
+    font-size: 13px;
+  }
+}

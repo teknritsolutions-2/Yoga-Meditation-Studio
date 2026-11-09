@@ -69,6 +69,7 @@ fs.mkdirSync(OUT, { recursive: true });
     "pages/memberships.html",
     "pages/contact.html",
     "pages/login.html",
+    "pages/signup.html",
     "pages/dashboard.html",
   ]) {
     await p.goto("http://127.0.0.1:4173/studio/" + file);
@@ -86,7 +87,7 @@ fs.mkdirSync(OUT, { recursive: true });
     assert.deepEqual(broken, []);
   }
   checks.push(
-    "All eight pages work under a GitHub Pages-style /studio/ subpath",
+    "All nine pages work under a GitHub Pages-style /studio/ subpath",
   );
   await p.unroute("**/studio/**");
   await p.goto("http://127.0.0.1:4173/index.html");
@@ -105,12 +106,12 @@ fs.mkdirSync(OUT, { recursive: true });
     "true",
   );
   checks.push("Home dropdown and keyboard-operated practice tabs");
-  await p.locator(".motion-toggle").click();
+  assert.equal(await p.locator(".motion-toggle").count(), 0);
   assert.equal(
     await p
       .locator(".solar-orbit")
-      .evaluate((e) => getComputedStyle(e).animationPlayState),
-    "paused",
+      .evaluate((e) => getComputedStyle(e).animationName),
+    "none",
   );
   await p.evaluate(() => window.scrollTo(0, 1000));
   await p.waitForTimeout(100);
@@ -125,7 +126,7 @@ fs.mkdirSync(OUT, { recursive: true });
       .evaluate((e) => Math.round(e.getBoundingClientRect().top)),
     0,
   );
-  checks.push("Animation pause, floating back-to-top, and sticky header");
+  checks.push("Static artwork, floating back-to-top, and sticky header");
   fs.writeFileSync(
     OUT + "/edge-results.json",
     JSON.stringify({ checks, errors }, null, 2),

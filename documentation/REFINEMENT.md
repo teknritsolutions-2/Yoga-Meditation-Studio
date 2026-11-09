@@ -1,5 +1,7 @@
 # Sola Studio finishing pass
 
+This report records the earlier finishing pass. See [REDESIGN.md](REDESIGN.md) for the subsequent targeted redesign and current verification.
+
 9 November 2026. This is a refinement of the existing website, preserving the palette, Fraunces/Manrope pairing, section sequence, four sourced SVG artworks, restrained motion, and static architecture.
 
 ## Typography

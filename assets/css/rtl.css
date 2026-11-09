@@ -6,9 +6,7 @@
 [dir="rtl"] .brand {
   direction: ltr;
 }
-[dir="rtl"] .solar-orbit {
-  animation-direction: reverse;
-}
+
 [dir="rtl"] input[type="email"] {
   direction: ltr;
   text-align: right;

@@ -18,7 +18,7 @@ if ($("#practice-tabs")) {
     });
     $("#practice-panel").setAttribute("aria-labelledby", "tab-" + id);
     $("#practice-panel").innerHTML =
-      `${photo(p.image, p.name + " practice")}<div class="practice-panel-content"><div><div class="practice-meta"><span class="pill">${p.level}</span><span class="pill">${p.duration} minutes</span></div><h3>${p.note}</h3><p>${p.desc}</p><div class="actions">${link("Explore " + p.name, "classes", "text-link", "?practice=" + p.id)}</div></div><img class="practice-art" src="${asset("graphics/organic-ripples.svg")}" alt=""></div>`;
+      `${photo(p.image, p.name + " practice")}<div class="practice-panel-content"><div class="practice-summary"><div class="practice-meta"><span class="pill">${p.level}</span><span class="pill">${p.duration} minutes</span></div><h3>${p.note}</h3></div><div class="practice-description"><p>${p.desc}</p><div class="actions">${link("Explore " + p.name, "classes", "text-link", "?practice=" + p.id)}</div></div></div>`;
   }
   tabs.addEventListener("click", (e) => {
     const b = e.target.closest("[data-practice]");
@@ -182,36 +182,19 @@ if ($("#class-filters")) {
     showClasses();
   });
   showClasses();
-  $("#weekly-timetable").innerHTML = days
-    .slice(0, 7)
-    .map(
-      (d) =>
-        `<div><h3>${dateLabel(d + "T12:00:00+05:30")}</h3>${upcomingCatalog()
-          .filter((s) => s.date === d)
-          .map(
-            (s) =>
-              `<button data-details="${s.id}"><strong>${timeLabel(s.start)}</strong><br>${practiceFor(s).name}<span>${practiceFor(s).duration} min · ${practiceFor(s).level}</span></button>`,
-          )
-          .join("")}</div>`,
-    )
-    .join("");
+  mountWeeklyExplorer();
 }
 if ($("#classes-week")) {
   function compare() {
     const n = Number($("#classes-week").value);
     $("#week-value").textContent = n;
-    const regular30 = Math.ceil((n * 30) / 7);
-    $("#plan-comparison").innerHTML =
-      `<span class="eyebrow">At ${n} ${n === 1 ? "class" : "classes"} per week</span><h3>About ${regular30} classes<br>over 30 days.</h3>${PLANS.map(
-        (p) => {
-          const expected = Math.ceil((n * p.days) / 7);
-          const usable =
-            p.credits === null ? expected : Math.min(p.credits, expected);
-          return `<div class="comparison-row"><div><strong>${p.name}</strong><br><small>${p.days}-day validity · ${p.credits === null ? "Unlimited" : p.credits + " credits"}</small></div><div style="text-align:end"><strong>~${money(Math.ceil(p.price / usable))}/class</strong><br><small>${usable} assumed visits in validity</small></div></div>`;
-        },
-      ).join(
-        "",
-      )}<p>Price divided by expected usable visits, rounded up. Visits = the lesser of pack credits and ⌈classes/week × validity days ÷ 7⌉. Unlimited uses all expected visits. This compares one pack at a time; it does not assume unused credits roll over or rank a plan as best.</p>`;
+    $("#comparison-summary").textContent =
+      `About ${Math.ceil((n * 30) / 7)} classes over 30 days`;
+    $("#plan-comparison").innerHTML = PLANS.map((p) => {
+      const expected = Math.ceil((n * p.days) / 7),
+        used = p.credits === null ? expected : Math.min(p.credits, expected);
+      return `<article class="comparison-card"><div><span class="eyebrow">${p.days}-day validity</span><h3>${p.name}</h3></div><div class="comparison-cost">~${money(Math.ceil(p.price / used))}<span>per attended class</span></div><dl><div><dt>Estimated visits</dt><dd>${used}</dd></div><div><dt>Access</dt><dd>${p.credits === null ? "Unlimited regular classes" : p.credits + (p.credits === 1 ? " class credit" : " class credits")}</dd></div></dl></article>`;
+    }).join("");
   }
   $("#classes-week").addEventListener("input", compare);
   compare();
@@ -229,42 +212,5 @@ if ($("#contact-form")) {
       `<span class="eyebrow">Enquiry preview · Not sent</span><h2>A little hello from ${esc(name)}.</h2><p><strong>Reply to:</strong> ${esc(email)}</p><p><strong>Topic:</strong> ${esc($("#contact-topic").value)}</p><p style="white-space:pre-wrap">${esc(message)}</p><p class="notice">This preview stays in your browser while open. No message was sent and no enquiry is stored. Studio contact details are awaiting configuration.</p><button class="btn" id="close-enquiry">Back to my message</button>`,
     );
     $("#close-enquiry").addEventListener("click", () => $("#modal").close());
-  });
-}
-if ($("#login-form")) {
-  const params = new URLSearchParams(location.search);
-  const id = params.get("class"),
-    plan = PLANS.find((p) => p.id === params.get("plan")),
-    s = SESSIONS.find((s) => s.id === id);
-  if (s)
-    $("#login-context").innerHTML =
-      `<p class="notice" style="margin-bottom:24px">${practiceFor(s).name} · ${dateLabel(s.start)} · ${timeLabel(s.start)} IST<br>Open the demo to review and add this class.</p>`;
-  else if (id)
-    $("#login-context").innerHTML =
-      '<p class="notice">That sample session is no longer in the current schedule. Explore upcoming classes in the demo.</p>';
-  else if (plan)
-    $("#login-context").innerHTML =
-      `<p class="notice" style="margin-bottom:24px">Exploring ${plan.name} · ${money(plan.price)} example price. Open the demo to preview a plan-change request.</p>`;
-  $("#show-password").addEventListener("click", () => {
-    const input = $("#login-password"),
-      show = input.type === "password";
-    input.type = show ? "text" : "password";
-    $("#show-password").textContent = show ? "Hide" : "Show";
-    $("#show-password").setAttribute("aria-pressed", show);
-  });
-  $("#login-form").addEventListener("submit", (e) => {
-    e.preventDefault();
-    $("#login-password").value = "";
-    $("#login-feedback").textContent =
-      "Real sign-in is not connected. Your credentials were not sent or saved. Use “Explore demo member dashboard” below.";
-  });
-  $("#enter-demo").addEventListener("click", () => {
-    enterDemo($("#remember-demo").checked);
-    const q = s
-      ? "?class=" + encodeURIComponent(s.id)
-      : plan
-        ? "?plan=" + plan.id
-        : "";
-    location.href = pageURL("dashboard", q + (plan ? "#membership" : ""));
   });
 }

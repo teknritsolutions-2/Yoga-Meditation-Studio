@@ -4,26 +4,28 @@ Reviewed 9 November 2026. Assets are stored locally and used within this website
 
 ## Graphic sources researched
 
-| Source                                    | Result                                                                                                                                                          |
-| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| https://www.fffuel.co/vvvortex/           | Published SVG geometry inspected, extracted, recoloured, and used as `solar-orbit.svg`. Geometry retained; warm clay/saffron stops and uniform opacity applied. |
-| https://www.fffuel.co/ssspiral/           | Published SVG geometry inspected, extracted, and recoloured as `organic-spiral.svg`. Original point placement retained.                                         |
-| https://www.fffuel.co/rrreflection/       | Actual generator opened in a browser; generated SVG exported and inspected. Recoloured warm as `meditative-rings.svg`.                                          |
-| https://www.fffuel.co/uuundulate/         | Actual organic-ripple generator exported in a browser, visually inspected, and recoloured with clay/cocoa strokes. Original generated paths preserved.          |
-| https://www.fffuel.co/pppsychedelic/      | Actual canvas artwork inspected. Full-spectrum output was unsuitable for this restrained warm palette; no asset used.                                           |
-| https://www.freevector.com/circles-swirls | Source and CC BY 4.0 licence reviewed. No asset used or redistributed; no FreeVector attribution obligation is triggered.                                       |
+| Source                                    | Result                                                                                                                                                 |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| https://www.fffuel.co/cccoil/             | Actual generator exported warm gradient spiral geometry for `solar-orbit.svg`; replaces the earlier dashed vvvortex asset.                             |
+| https://www.fffuel.co/cccircular/         | Actual generated composition inspected; not selected for this revision.                                                                                |
+| https://www.fffuel.co/oooscillate/        | Actual generated wave composition inspected; not selected for this revision.                                                                           |
+| https://www.fffuel.co/ssspiral/           | Published SVG geometry inspected, extracted, and recoloured as `organic-spiral.svg`. Original point placement retained.                                |
+| https://www.fffuel.co/rrreflection/       | Actual generator opened in a browser; generated SVG exported and inspected. Recoloured warm as `meditative-rings.svg`.                                 |
+| https://www.fffuel.co/uuundulate/         | Actual organic-ripple generator exported in a browser, visually inspected, and recoloured with clay/cocoa strokes. Original generated paths preserved. |
+| https://www.fffuel.co/pppsychedelic/      | Actual canvas artwork inspected. Full-spectrum output was unsuitable for this restrained warm palette; no asset used.                                  |
+| https://www.freevector.com/circles-swirls | Source and CC BY 4.0 licence reviewed. No asset used or redistributed; no FreeVector attribution obligation is triggered.                              |
 
 fffuel licence: https://www.fffuel.co/license/
 
 The licence permits personal and commercial project use without required attribution, and restricts sublicensing, resale, and redistribution of the images. These assets are supplied as integrated project artwork, not as a standalone graphic collection. Do not extract or repackage them for resale or separate distribution. An acknowledgement is included in the public footer's credits dialog.
 
-| Local graphic                          | Intended treatment                                                                              |
-| -------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `assets/graphics/solar-orbit.svg`      | Home 1 hero; one 65-second rotation, pause control, reduced-motion support                      |
-| `assets/graphics/organic-spiral.svg`   | Static Home 2 hero accent, class/practice accents, static page introductions                    |
-| `assets/graphics/organic-ripples.svg`  | Static class-discovery accent and cropped Home 2 workshop editorial panel                       |
-| `assets/graphics/meditative-rings.svg` | Static Home 1 meditation section                                                                |
-| `assets/graphics/logo.svg`             | Original simple solar-ray brand mark and favicon; geometric logo, not stock psychedelic artwork |
+| Local graphic                          | Intended treatment                                                                                               |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `assets/graphics/solar-orbit.svg`      | Home 1 hero and Classes banner; static source-generated warm spiral; short hero entrance respects reduced motion |
+| `assets/graphics/organic-spiral.svg`   | Static Home 2 hero accent, class/practice accents, static page introductions                                     |
+| `assets/graphics/organic-ripples.svg`  | Static class-discovery accent and cropped Home 2 workshop editorial panel                                        |
+| `assets/graphics/meditative-rings.svg` | Static Home 1 meditation section                                                                                 |
+| `assets/graphics/logo.svg`             | Original simple solar-ray brand mark and favicon; geometric logo, not stock psychedelic artwork                  |
 
 All four decorative SVGs were visually inspected and have transparent backgrounds. No bespoke psychedelic paths or random CSS-generated blobs were introduced.
 
@@ -33,16 +35,14 @@ Unsplash licence: https://unsplash.com/license
 
 Free commercial and noncommercial website use is allowed. Photos may not be resold as unmodified standalone images or compiled to recreate a competing photo service. Attribution is appreciated, not required.
 
-| Local file        | Exact source image URL                                       | Use                                                                          |
-| ----------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------- |
-| `flow.jpg`        | https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b | Home 1 hero, Vinyasa practice, studio-day morning                            |
-| `practice.jpg`    | https://images.unsplash.com/photo-1599901860904-17e6ed7083a0 | Hatha practice, studio-day afternoon                                         |
-| `quiet.jpg`       | https://images.unsplash.com/photo-1545205597-3d9d02c29597    | Yin practice, evening studio-day illustration                                |
-| `sunset.jpg`      | https://images.unsplash.com/photo-1544367567-0f2fcb009e0b    | Home 2 hero, breathwork illustration                                         |
-| `meditation.jpg`  | https://images.unsplash.com/photo-1506126613408-eca07ce68773 | Secondary studio-atmosphere photograph and login art                         |
-| `movement.jpg`    | https://images.unsplash.com/photo-1518611012118-696072aa579a | Dynamic movement comparison                                                  |
-| `guide-maya.jpg`  | https://images.unsplash.com/photo-1580489944761-15a19d654956 | Illustrative Maya profile; stock subject is not an actual studio instructor  |
-| `guide-arjun.jpg` | https://images.unsplash.com/photo-1500648767791-00dcc994a43e | Illustrative Arjun profile; stock subject is not an actual studio instructor |
+| Local file       | Exact source image URL                                       | Use                                               |
+| ---------------- | ------------------------------------------------------------ | ------------------------------------------------- |
+| `flow.jpg`       | https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b | Home 1 hero, Vinyasa practice, studio-day morning |
+| `practice.jpg`   | https://images.unsplash.com/photo-1599901860904-17e6ed7083a0 | Hatha practice, studio-day afternoon              |
+| `quiet.jpg`      | https://images.unsplash.com/photo-1545205597-3d9d02c29597    | Yin practice, evening studio-day illustration     |
+| `sunset.jpg`     | https://images.unsplash.com/photo-1544367567-0f2fcb009e0b    | Home 2 hero, breathwork illustration              |
+| `meditation.jpg` | https://images.unsplash.com/photo-1506126613408-eca07ce68773 | Home 1 studio-atmosphere photograph               |
+| `movement.jpg`   | https://images.unsplash.com/photo-1518611012118-696072aa579a | Dynamic movement comparison                       |
 
 Pexels licence: https://www.pexels.com/license/
 
@@ -65,7 +65,7 @@ The Pexels licence was rechecked for the finishing pass. Each source was downloa
 | `quiet-practice.jpg` | [Women in a yoga session — Andrea Piacquadio](https://www.pexels.com/photo/there-women-in-a-yoga-session-917732/)                          | Guided Meditation selector and Home 2 stillness comparison. A native landscape photograph replaces the repeatedly cropped login portrait.            |
 | `stillness.jpg`      | [Practice at home by large windows — Vitaly Gariev](https://www.pexels.com/photo/woman-practicing-yoga-at-home-by-large-windows-36714246/) | Restorative selector. A naturally framed quiet moment, distinct from Guided Meditation.                                                              |
 
-Downloaded widths: 1400–1600px. Original photographs are retained without stretching. All four decorative SVG files remain unchanged from the initial implementation; only CSS placement, rendered size, and crop were refined.
+Downloaded widths: 1400–1600px. Original photographs are retained without stretching. This describes the earlier finishing pass. The targeted revision below replaces `solar-orbit.svg` and the first two guide images.
 
 ## Fonts
 
@@ -77,3 +77,20 @@ Downloaded widths: 1400–1600px. Original photographs are retained without stre
 ## Brand and content
 
 Sola Studio is a working brand; no trademark clearance is claimed. Sample instructor names, teaching approaches, workshop concepts, and membership terms are explicitly illustrative. Photography is not evidence of an operating studio, instructor identity, or verified professional qualification.
+
+## Targeted redesign — source details
+
+The actual cccoil generator was explored alongside cccircular and oooscillate. Selected export: transparent background, 32 lines, gradient `#F3C46C` → `#A65F40`, round caps, width 22, spacing 12, step values 2/2, scale .85, rotation 0. Existing generator geometry is retained. One zero-length outer mark was omitted to avoid an isolated dot; no hand-authored psychedelic geometry was added. The SVG keeps its aspect ratio and uses no continuous animation.
+
+| Replacement       | Source                                                                            | Treatment                                                                                 |
+| ----------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `guide-maya.jpg`  | [Pexels 3823039 — Elina Fairytale](https://www.pexels.com/photo/3823039/)         | Full yoga stretch in a bright studio; native landscape framing on Home 1 and Instructors. |
+| `guide-arjun.jpg` | [Pexels 6648534 — Ivan S](https://www.pexels.com/photo/a-man-doing-yoga-6648534/) | Seated meditation in a bright studio; primary subject's head, hands and feet retained.    |
+
+Both files replace the old generic portraits in place. The Leela practice photograph remains unchanged. Stock practitioners are not represented as verified Sola staff.
+
+Social button marks:
+
+- `google.png`: official [Google G asset](https://developers.google.com/identity/images/g-logo.png), used at original aspect ratio under [Google sign-in branding guidance](https://developers.google.com/identity/branding-guidelines).
+- `apple.svg`: Apple silhouette from [Simple Icons](https://github.com/simple-icons/simple-icons/blob/develop/icons/apple.svg), distributed under the project's CC0 license; Apple trademarks remain Apple's. Consult [Apple sign-in guidance](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple) before connecting OAuth.
+- These buttons show unconnected feedback; neither provider is implemented or claimed certified.

@@ -28,6 +28,7 @@ const ROOT = "http://127.0.0.1:4173";
     "pages/memberships.html",
     "pages/contact.html",
     "pages/login.html",
+    "pages/signup.html",
     "pages/dashboard.html",
   ];
   for (const file of pages) {
@@ -199,7 +200,7 @@ const ROOT = "http://127.0.0.1:4173";
   await p.goto(ROOT + "/pages/memberships.html");
   await p.locator("#classes-week").fill("3");
   assert(
-    (await p.locator("#plan-comparison").textContent()).includes(
+    (await p.locator("#comparison-summary").textContent()).includes(
       "About 13 classes",
     ),
   );
@@ -227,25 +228,11 @@ const ROOT = "http://127.0.0.1:4173";
     .first()
     .getAttribute("data-book");
   await p.locator("[data-book]").first().click();
-  await p.waitForURL("**/login.html?class=*");
-  assert.equal(new URL(p.url()).searchParams.get("class"), selected);
-  await p.locator("#login-email").fill("test@example.com");
-  await p.locator("#login-password").fill("test-password-only");
-  await p.locator("#show-password").click();
-  assert.equal(await p.locator("#login-password").getAttribute("type"), "text");
-  await p.locator("#login-form button[type=submit]").click();
-  assert.equal(await p.locator("#login-password").inputValue(), "");
-  assert.equal(
-    await p.evaluate(() =>
-      JSON.stringify(localStorage).includes("test-password-only"),
-    ),
-    false,
-  );
-  await p.locator("#enter-demo").click();
   await p.waitForFunction(() => location.pathname.endsWith("/dashboard.html"));
   assert(await p.locator("#modal").isVisible());
+  assert((await p.locator("#modal-body").textContent()).includes("Hatha Yoga"));
   checks.push(
-    "Guest booking context preserved through explicit demo entry; passwords not stored",
+    "Guest booking opens directly accessible dashboard with selected session",
   );
   await p.keyboard.press("Escape");
   await p.setViewportSize({ width: 390, height: 844 });

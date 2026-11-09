@@ -54,22 +54,25 @@
       <section class="wrap section-sm membership-all">
         <div data-plans="single,five,ten,unlimited"></div>
         <p class="schedule-note">
-          Indicative INR prices. Plans are previews; no payment is collected.
+          Indicative INR prices. Explore each plan before choosing your rhythm.
         </p>
       </section>
       <section class="practice-section section">
         <div class="wrap comparison">
-          <div>
-            <span class="eyebrow">Find your own balance</span>
-            <h2>How often would<br />you like to <em>show up?</em></h2>
-            <p>
-              Explore how the plans compare at your expected pace. Your ideal
-              fit depends on how often you attend and each pack’s validity.
-            </p>
+          <div class="comparison-top">
+            <div>
+              <span class="eyebrow">Find your own balance</span>
+              <h2>How often would you like to <em>show up?</em></h2>
+              <p>
+                Choose your weekly rhythm. See how each plan works with the time
+                you have.
+              </p>
+            </div>
             <div class="range-field">
               <label for="classes-week"
-                >Classes per week
-                <strong><span id="week-value">2</span> classes</strong></label
+                >Classes per week<strong
+                  ><span id="week-value">2</span> classes</strong
+                ></label
               ><input
                 type="range"
                 id="classes-week"
@@ -77,13 +80,24 @@
                 max="7"
                 value="2"
               />
+              <p id="comparison-summary" aria-live="polite"></p>
             </div>
           </div>
           <div
-            class="comparison-result"
+            class="comparison-results"
             id="plan-comparison"
             aria-live="polite"
           ></div>
+          <details class="calculation-note">
+            <summary>How the comparison is calculated</summary>
+            <p>
+              Expected visits = classes per week × validity days ÷ 7, rounded
+              up, capped at the pack’s credit limit. Cost per attended class =
+              plan price ÷ expected usable visits, rounded up. Unlimited plans
+              use all expected visits. This compares one plan at a time; unused
+              credits do not roll over in this calculation.
+            </p>
+          </details>
         </div>
       </section>
       <section class="wrap section">
@@ -111,15 +125,15 @@
             <details>
               <summary>Does my plan renew automatically?</summary>
               <p>
-                No. Renewal is manual. You can preview a renewal request in the
-                member demo; checkout and payment are not connected.
+                No. Renewal is manual. Explore your membership and renewal
+                options in the member dashboard.
               </p>
             </details>
             <details>
               <summary>Can I change or renew a plan?</summary>
               <p>
-                Open the member demo to preview a renewal or plan-change
-                request. A preview does not change your plan or collect payment.
+                Open the member dashboard to explore a renewal or plan-change
+                request. No payment is collected without a connected checkout.
               </p>
             </details>
           </div>
@@ -147,9 +161,7 @@
     </dialog>
     <noscript
       ><p class="notice">
-        JavaScript is required for navigation controls, class schedules, and the
-        local demo dashboard. Please enable JavaScript to explore the full
-        experience.
+        Enable JavaScript to explore class schedules and the member workspace.
       </p></noscript
     >
   </body>
