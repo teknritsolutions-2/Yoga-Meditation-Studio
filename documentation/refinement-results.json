@@ -1,0 +1,1018 @@
+{
+  "date": "2026-11-09",
+  "visual": {
+    "checks": [
+      {
+        "name": "home",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "home",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "home2",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "home2",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "classes",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "classes",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "instructors",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "instructors",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "memberships",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "memberships",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "contact",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "contact",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "login",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "login",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "dashboard",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "dashboard",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      }
+    ],
+    "errors": [],
+    "failures": []
+  },
+  "browser_regression": {
+    "checks": [
+      "index.html @ 320",
+      "index.html @ 390",
+      "index.html @ 768",
+      "index.html @ 1024",
+      "index.html @ 1280",
+      "index.html @ 1440",
+      "index.html dark RTL @ 390",
+      "index.html dark RTL @ 1280",
+      "pages/home2.html @ 320",
+      "pages/home2.html @ 390",
+      "pages/home2.html @ 768",
+      "pages/home2.html @ 1024",
+      "pages/home2.html @ 1280",
+      "pages/home2.html @ 1440",
+      "pages/home2.html dark RTL @ 390",
+      "pages/home2.html dark RTL @ 1280",
+      "pages/classes.html @ 320",
+      "pages/classes.html @ 390",
+      "pages/classes.html @ 768",
+      "pages/classes.html @ 1024",
+      "pages/classes.html @ 1280",
+      "pages/classes.html @ 1440",
+      "pages/classes.html dark RTL @ 390",
+      "pages/classes.html dark RTL @ 1280",
+      "pages/instructors.html @ 320",
+      "pages/instructors.html @ 390",
+      "pages/instructors.html @ 768",
+      "pages/instructors.html @ 1024",
+      "pages/instructors.html @ 1280",
+      "pages/instructors.html @ 1440",
+      "pages/instructors.html dark RTL @ 390",
+      "pages/instructors.html dark RTL @ 1280",
+      "pages/memberships.html @ 320",
+      "pages/memberships.html @ 390",
+      "pages/memberships.html @ 768",
+      "pages/memberships.html @ 1024",
+      "pages/memberships.html @ 1280",
+      "pages/memberships.html @ 1440",
+      "pages/memberships.html dark RTL @ 390",
+      "pages/memberships.html dark RTL @ 1280",
+      "pages/contact.html @ 320",
+      "pages/contact.html @ 390",
+      "pages/contact.html @ 768",
+      "pages/contact.html @ 1024",
+      "pages/contact.html @ 1280",
+      "pages/contact.html @ 1440",
+      "pages/contact.html dark RTL @ 390",
+      "pages/contact.html dark RTL @ 1280",
+      "pages/login.html @ 320",
+      "pages/login.html @ 390",
+      "pages/login.html @ 768",
+      "pages/login.html @ 1024",
+      "pages/login.html @ 1280",
+      "pages/login.html @ 1440",
+      "pages/login.html dark RTL @ 390",
+      "pages/login.html dark RTL @ 1280",
+      "pages/dashboard.html @ 320",
+      "pages/dashboard.html @ 390",
+      "pages/dashboard.html @ 768",
+      "pages/dashboard.html @ 1024",
+      "pages/dashboard.html @ 1280",
+      "pages/dashboard.html @ 1440",
+      "pages/dashboard.html dark RTL @ 390",
+      "pages/dashboard.html dark RTL @ 1280",
+      "Initial ten-pack balance 6",
+      "Book: credits 6\u21925",
+      "Duplicate prevented, balance unchanged",
+      "Cancel restores one credit, repeated cancellation prevented",
+      "State persists across refresh",
+      "Renewal preview saves request without applying plan/payment",
+      "Unlimited bookings do not fabricate a credit count",
+      "Reset restores consistent sample state and validity/history dates",
+      "Style/level filters and reset",
+      "Practice finder matches goal and duration",
+      "Plan comparison derives visits from sample data",
+      "Enquiry preview validates and does not claim sending",
+      "Guest booking context preserved through explicit demo entry; passwords not stored",
+      "Dashboard drawer opens/closes with Escape",
+      "Mobile navigation and persistent theme/RTL",
+      "Reduced motion stops decorative animation"
+    ],
+    "errors": [],
+    "failures": []
+  },
+  "edge_regression": {
+    "checks": [
+      "Expired membership blocks booking",
+      "Exhausted single-session credit blocks booking",
+      "15-day rollover preserves booking history and credit accounting",
+      "All eight pages work under a GitHub Pages-style /studio/ subpath",
+      "Home dropdown and keyboard-operated practice tabs",
+      "Animation pause, floating back-to-top, and sticky header"
+    ],
+    "errors": []
+  },
+  "focused_dashboard": {
+    "checks": [
+      "book @ 320",
+      "sessions @ 320",
+      "usage @ 320",
+      "membership @ 320",
+      "notifications @ 320",
+      "profile @ 320",
+      "book @ 768",
+      "sessions @ 768",
+      "usage @ 768",
+      "membership @ 768",
+      "notifications @ 768",
+      "profile @ 768",
+      "book @ 1024",
+      "sessions @ 1024",
+      "usage @ 1024",
+      "membership @ 1024",
+      "notifications @ 1024",
+      "profile @ 1024",
+      "book @ 1440",
+      "sessions @ 1440",
+      "usage @ 1440",
+      "membership @ 1440",
+      "notifications @ 1440",
+      "profile @ 1440"
+    ],
+    "sidebar": {
+      "height": 720,
+      "content": 720
+    }
+  },
+  "static": {
+    "local_references": 150,
+    "javascript_files": 7,
+    "issues": [],
+    "artwork_unchanged": [
+      "organic-spiral.svg",
+      "meditative-rings.svg",
+      "solar-orbit.svg",
+      "logo.svg",
+      "organic-ripples.svg"
+    ]
+  },
+  "limits": [
+    "Chromium/Brave only; no physical-device or assistive-technology certification",
+    "Authentication, booking inventory, payments, and message delivery remain local demonstrations"
+  ]
+}

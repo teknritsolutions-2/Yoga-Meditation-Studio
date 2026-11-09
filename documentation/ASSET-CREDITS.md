@@ -39,7 +39,7 @@ Free commercial and noncommercial website use is allowed. Photos may not be reso
 | `practice.jpg`    | https://images.unsplash.com/photo-1599901860904-17e6ed7083a0 | Hatha practice, studio-day afternoon                                         |
 | `quiet.jpg`       | https://images.unsplash.com/photo-1545205597-3d9d02c29597    | Yin practice, evening studio-day illustration                                |
 | `sunset.jpg`      | https://images.unsplash.com/photo-1544367567-0f2fcb009e0b    | Home 2 hero, breathwork illustration                                         |
-| `meditation.jpg`  | https://images.unsplash.com/photo-1506126613408-eca07ce68773 | Meditation, Restorative, login art, stillness comparison                     |
+| `meditation.jpg`  | https://images.unsplash.com/photo-1506126613408-eca07ce68773 | Secondary studio-atmosphere photograph and login art                         |
 | `movement.jpg`    | https://images.unsplash.com/photo-1518611012118-696072aa579a | Dynamic movement comparison                                                  |
 | `guide-maya.jpg`  | https://images.unsplash.com/photo-1580489944761-15a19d654956 | Illustrative Maya profile; stock subject is not an actual studio instructor  |
 | `guide-arjun.jpg` | https://images.unsplash.com/photo-1500648767791-00dcc994a43e | Illustrative Arjun profile; stock subject is not an actual studio instructor |
@@ -50,10 +50,22 @@ Free website use and modification are allowed. No endorsement by the people show
 
 | Local file         | Exact source image URL                                             | Use                                                                            |
 | ------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
-| `studio-light.jpg` | https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg | Detail-led studio atmosphere, Contact, closing CTA                             |
+| `studio-light.jpg` | https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg | Detail-led studio atmosphere and Contact                                       |
 | `guide-leela.jpg`  | https://images.pexels.com/photos/3822906/pexels-photo-3822906.jpeg | Illustrative Leela profile and Home 2 spotlight; not an actual Sola instructor |
 
 Requested image delivery sizes range from 900 to 1600px. Actual intrinsic dimensions and browser framing were inspected. Pictures are never stretched or mirrored; portrait framing is adjusted responsively. Replaced, unused photography was removed from the final project.
+
+## Refinement photography — 9 November 2026
+
+The Pexels licence was rechecked for the finishing pass. Each source was downloaded and visually inspected before selection. The following additions reduce repetition and provide suitable native aspect ratios; they are not photographs of an actual Sola location or team.
+
+| Local file           | Source                                                                                                                                     | Use                                                                                                                                                  |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `studio-class.jpg`   | https://www.pexels.com/photo/4056723/ — delivered from https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg                  | Closing panels on Home 1, Home 2, and Instructors. The foreground posture is prioritised on desktop; tablet/mobile use a full-width landscape frame. |
+| `quiet-practice.jpg` | [Women in a yoga session — Andrea Piacquadio](https://www.pexels.com/photo/there-women-in-a-yoga-session-917732/)                          | Guided Meditation selector and Home 2 stillness comparison. A native landscape photograph replaces the repeatedly cropped login portrait.            |
+| `stillness.jpg`      | [Practice at home by large windows — Vitaly Gariev](https://www.pexels.com/photo/woman-practicing-yoga-at-home-by-large-windows-36714246/) | Restorative selector. A naturally framed quiet moment, distinct from Guided Meditation.                                                              |
+
+Downloaded widths: 1400–1600px. Original photographs are retained without stretching. All four decorative SVG files remain unchanged from the initial implementation; only CSS placement, rendered size, and crop were refined.
 
 ## Fonts
 

@@ -57,7 +57,7 @@ function planCards(ids = PLANS.map((p) => p.id)) {
   return `<div class="plans-grid">${ids
     .map((id) => {
       const p = PLANS.find((p) => p.id === id);
-      return `<article class="plan ${id === "ten" ? "featured" : ""}">${id === "ten" ? '<span class="plan-tag">A regular rhythm</span>' : ""}<span class="eyebrow">${p.credits === null ? "Unlimited access" : p.credits + " class" + (p.credits > 1 ? "es" : "")}</span><h3>${p.name}</h3><p>${p.audience}</p><div class="price">${money(p.price)}<span> / ${p.credits === null ? "month" : p.credits === 1 ? "session" : "pack"}</span></div><ul>${p.features.map((f) => `<li>${icon("check", 16)} ${f}</li>`).join("")}</ul>${link("Explore this plan", "login", "btn " + (id === "ten" ? "" : "outline"), "?plan=" + p.id)}<small>No automatic renewal. Regular classes only; workshops excluded.</small></article>`;
+      return `<article class="plan ${id === "ten" ? "featured" : ""}">${id === "ten" ? '<span class="plan-tag">A regular rhythm</span>' : ""}<span class="eyebrow">${p.credits === null ? "Unlimited access" : p.credits + " class" + (p.credits > 1 ? "es" : "")}</span><h3>${p.name}</h3><p>${p.audience}</p><div class="price">${money(p.price)}<span> / ${p.credits === null ? "month" : p.credits === 1 ? "session" : "pack"}</span></div><ul>${p.features.map((f) => `<li>${icon("check", 16)} ${f}</li>`).join("")}</ul>${link("Explore this plan", "login", "btn " + (id === "ten" ? "" : "outline"), "?plan=" + p.id)}<small>Manual renewal · Workshops excluded.</small></article>`;
     })
     .join("")}</div>`;
 }

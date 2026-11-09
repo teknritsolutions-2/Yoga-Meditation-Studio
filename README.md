@@ -65,4 +65,4 @@ URLs and local font/image paths work under a repository subpath as well as a dom
 
 ## Verification and asset records
 
-See `documentation/QA.md`, `documentation/ARCHITECTURE.md`, and `documentation/ASSET-CREDITS.md`. Open-font license notices are included in `assets/fonts/`.
+See `documentation/REFINEMENT.md` for the finishing-pass report and visual evidence, plus `documentation/QA.md`, `documentation/ARCHITECTURE.md`, and `documentation/ASSET-CREDITS.md`. Open-font license notices are included in `assets/fonts/`.

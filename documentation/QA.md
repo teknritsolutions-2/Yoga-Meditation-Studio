@@ -60,3 +60,7 @@ The scripts default to the installed macOS Brave executable. Set `SOLA_BROWSER` 
 - No authentication, payment, email, live seat inventory, map, or real member account integration exists or was claimed tested.
 - The GitHub Pages workflow follows the current official GitHub static workflow pattern and packages only runtime files. It has **not** been run against a remote repository; none was supplied.
 - The architecture reference repository was read only and remains unchanged.
+
+## Finishing-pass verification
+
+The subsequent refinement was verified on 9 November 2026. See [REFINEMENT.md](REFINEMENT.md) and `refinement-results.json` for 112 light/dark/RTL configurations, 24 focused dashboard layout checks, the rerun 80-check browser suite and 6-group edge suite, preserved SVG checks, and before/after evidence. The browser limitations above still apply. GitHub Pages has since been enabled; the initial deployment succeeded before this refinement, and the updated deployment is verified separately when published.

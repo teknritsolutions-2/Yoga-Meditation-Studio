@@ -57,6 +57,7 @@ fs.mkdirSync(OUT, { recursive: true });
   await p.route("**/studio/**", async (route) => {
     const response = await route.fetch({
       url: route.request().url().replace("/studio/", "/"),
+      maxRetries: 2,
     });
     await route.fulfill({ response });
   });
@@ -71,6 +72,7 @@ fs.mkdirSync(OUT, { recursive: true });
     "pages/dashboard.html",
   ]) {
     await p.goto("http://127.0.0.1:4173/studio/" + file);
+    await p.evaluate(() => document.fonts.ready);
     assert.equal(await p.locator("h1").count(), 1);
     const broken = await p.evaluate(async () => {
       for (const im of document.images) im.loading = "eager";

@@ -105,7 +105,7 @@ if ($("#finder-form")) {
     );
     $("#finder-results").innerHTML =
       matches.length && sessions.length
-        ? `<div class="finder-result"><span class="eyebrow">A few places to begin</span><h3>${matches.map((p) => p.name).join(" · ")}</h3><p>${sessions.length} matching sample sessions over the next two weeks. Here are the next three.</p>${sessionRows(sessions.slice(0, 3))}</div>`
+        ? `<div class="finder-result"><span class="eyebrow">A few places to begin</span><h3>${matches.map((p) => p.name).join(" · ")}</h3><p>${sessions.length} matching sessions over the next two weeks. Here are the next three.</p>${sessionRows(sessions.slice(0, 3))}</div>`
         : '<div class="empty"><h3>Let’s try a little flexibility.</h3><p>No exact match for this combination. Try any length or a different time of day.</p></div>';
   }
   $("#finder-form").addEventListener("submit", findPractice);
@@ -153,7 +153,7 @@ if ($("#class-filters")) {
       b.setAttribute("aria-pressed", b.dataset.style === style),
     );
     $("#class-count").textContent =
-      `${slots.length} sample sessions${practice ? " · " + PRACTICES.find((p) => p.id === practice).name : ""} · Next two weeks · IST`;
+      `${slots.length} sessions${practice ? " · " + PRACTICES.find((p) => p.id === practice).name : ""} · Next two weeks · IST`;
     $("#class-list").innerHTML = sessionRows(slots.slice(0, limit));
     $("#load-classes").hidden = slots.length <= limit;
   }
