@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Sola Studio — yoga, meditation, and a little breathing room. Discover your practice, explore sample classes, and find your rhythm."
+    />
+    <meta name="theme-color" content="#FCF7EE" />
+    <title>Find your practice · Sola Studio</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/graphics/logo.svg" />
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          JSON.parse(localStorage.getItem("sola-theme")) || "light";
+        document.documentElement.dir =
+          JSON.parse(localStorage.getItem("sola-direction")) || "ltr";
+      } catch (e) {}
+    </script>
+    <script defer src="../assets/js/site-config.js"></script>
+    <script defer src="../assets/js/class-data.js"></script>
+    <script defer src="../assets/js/membership-data.js"></script>
+    <script defer src="../assets/js/booking.js"></script>
+    <script defer src="../assets/js/main.js"></script>
+    <script defer src="../assets/js/public.js"></script>
+  </head>
+  <body data-page="home2">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header" id="site-header"></header>
+    <main id="main">
+      <section class="wrap alt-hero">
+        <div>
+          <span class="eyebrow">Your practice. Your own way.</span>
+          <h1>Find the practice<br />that feels like <em>yours.</em></h1>
+          <p>
+            A little energy. A softer landing. A fresh perspective. Start with
+            how you feel, and find your way to the mat.
+          </p>
+          <a class="btn" href="#practice-finder"
+            >Find my practice <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <div class="alt-visual">
+          <img
+            class=""
+            src="../assets/images/sunset.jpg"
+            alt="Full yoga posture by the sea at sunset"
+            loading="eager"
+            decoding="async"
+          /><img
+            class=""
+            src="../assets/graphics/organic-spiral.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+      </section>
+      <section class="wrap section-sm" id="practice-finder">
+        <div class="finder">
+          <span class="eyebrow">A little guidance goes a long way</span>
+          <h2>What do you need today?</h2>
+          <p>Choose your rhythm. We’ll suggest a few places to begin.</p>
+          <form class="filters" id="finder-form">
+            <div class="field">
+              <label for="goal">I’d like to</label
+              ><select id="goal">
+                <option>Move</option>
+                <option>Unwind</option>
+                <option>Build Strength</option>
+                <option>Slow Down</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="experience">My experience</label
+              ><select id="experience">
+                <option>All Levels</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="length">Session length</label
+              ><select id="length">
+                <option value="any">Any length</option>
+                <option value="30">30 minutes</option>
+                <option value="45">45 minutes</option>
+                <option value="60">60 minutes</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="time-of-day">Time of day</label
+              ><select id="time-of-day">
+                <option value="any">Any time</option>
+                <option value="morning">Morning</option>
+                <option value="evening">Evening</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">Find my practice</button>
+          </form>
+          <div id="finder-results" aria-live="polite"></div>
+          <p class="schedule-note">
+            A practice suggestion, based on your selections. Illustrative
+            upcoming classes in IST.
+          </p>
+        </div>
+      </section>
+      <section class="wrap section">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Make room for both</span>
+            <h2>A little fire.<br />A little <em>stillness.</em></h2>
+          </div>
+        </div>
+        <div class="compare-practices">
+          <article>
+            <img
+              class=""
+              src="../assets/images/movement.jpg"
+              alt="Yoga students moving together in a bright studio"
+              loading="lazy"
+              decoding="async"
+            />
+            <h3>Move with your breath.</h3>
+            <p>
+              Build a steady foundation with Hatha, or follow the flowing rhythm
+              of Vinyasa. Explore strength with a sense of ease.
+            </p>
+            <a class="text-link" href="../pages/classes.html?style=Yoga"
+              >Explore movement
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+            ></a>
+          </article>
+          <article>
+            <img
+              class=""
+              src="../assets/images/meditation.jpg"
+              alt="Sunlight falling over a seated meditation practice"
+              loading="lazy"
+              decoding="async"
+            />
+            <h3>Come back to quiet.</h3>
+            <p>
+              Find a slower pace in Yin, Restorative, and Guided Meditation.
+              More room to notice, soften, and simply be.
+            </p>
+            <a class="text-link" href="../pages/classes.html?style=Meditation"
+              >Explore stillness
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+            ></a>
+          </article>
+        </div>
+      </section>
+      <section class="practice-section section">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">One day. A few little rituals.</span>
+              <h2>From first light<br />to <em>last exhale.</em></h2>
+            </div>
+          </div>
+          <div class="day-story">
+            <article>
+              <span class="eyebrow">01 / Morning</span>
+              <h3>Meet the day.</h3>
+              <p>
+                Roll out your mat. A little movement before the world gets busy.
+              </p>
+              <img
+                class=""
+                src="../assets/images/flow.jpg"
+                alt="Morning yoga in natural light"
+                loading="lazy"
+                decoding="async"
+              />
+            </article>
+            <article>
+              <span class="eyebrow">02 / Afternoon</span>
+              <h3>Make a little space.</h3>
+              <p>A quiet pause between everything you have on your plate.</p>
+              <img
+                class=""
+                src="../assets/images/practice.jpg"
+                alt="A steady foundational yoga practice"
+                loading="lazy"
+                decoding="async"
+              />
+            </article>
+            <article>
+              <span class="eyebrow">03 / Evening</span>
+              <h3>Leave the rush behind.</h3>
+              <p>
+                Settle into your breath. Let the day land a little more gently.
+              </p>
+              <img
+                class=""
+                src="../assets/images/quiet.jpg"
+                alt="A group practising mindful movement outdoors"
+                loading="lazy"
+                decoding="async"
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="wrap section">
+        <div class="workshop">
+          <div>
+            <span class="eyebrow"
+              >A deeper kind of pause / Sample workshop</span
+            >
+            <h2>The art of<br /><em>slowing down.</em></h2>
+            <p>
+              A 90-minute exploration of gentle movement, restorative shapes,
+              and guided stillness with Leela. An illustrative workshop concept;
+              date and pricing to be announced.
+            </p>
+            <a class="text-link" href="../pages/contact.html?topic=Workshop"
+              >Enquire about workshops
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+            ></a>
+          </div>
+          <div class="art-panel">
+            <img
+              class=""
+              src="../assets/graphics/organic-ripples.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="wrap section-sm">
+        <div class="spotlight">
+          <img
+            class=""
+            src="../assets/images/guide-leela.jpg"
+            alt="Illustrative instructor at yoga practice"
+            loading="lazy"
+            decoding="async"
+          />
+          <div>
+            <span class="eyebrow">A guide for the quieter days</span>
+            <h2>
+              “There’s no right way<br />to arrive.<br /><em>Just arrive.”</em>
+            </h2>
+            <p>
+              Meet Leela, our sample guide for Yin and meditation. Her
+              illustrative teaching approach makes space for you to listen,
+              pause, and feel at home.
+            </p>
+            <span class="specialty">LEELA SHAH · ILLUSTRATIVE PROFILE</span>
+            <div class="actions" style="margin-top: 25px">
+              <a class="text-link" href="../pages/instructors.html#leela"
+                >Meet our guides
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="plans-section section">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Make a little room in your week</span>
+              <h2>Your own rhythm.<br />Your own <em>membership.</em></h2>
+            </div>
+          </div>
+          <div data-plans="five,ten,unlimited"></div>
+          <p class="schedule-note">
+            Example INR pricing. Sample membership models; no payment is
+            collected.
+          </p>
+        </div>
+      </section>
+      <section class="wrap section">
+        <div class="closing">
+          <img
+            class=""
+            src="../assets/images/studio-light.jpg"
+            alt="Light-filled yoga studio with an instructor at practice"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="closing-copy">
+            <span class="eyebrow">Your mat is waiting</span>
+            <h2>A good day starts<br />with a little space.</h2>
+            <p>
+              Come as you are. We’ll help you find a practice that feels like
+              home.
+            </p>
+            <a class="btn" href="../pages/classes.html"
+              >Find your first class
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="site-footer"></footer>
+    <button class="back-top" aria-label="Back to top" id="back-top">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        aria-hidden="true"
+      >
+        <path d="m6 13 6-6 6 6m-6-6v14" />
+      </svg>
+    </button>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal" aria-label="Details">
+      <button class="icon-btn modal-close" aria-label="Close dialog">×</button>
+      <div id="modal-body"></div>
+    </dialog>
+    <noscript
+      ><p class="notice">
+        JavaScript is required for navigation controls, class schedules, and the
+        local demo dashboard. Please enable JavaScript to explore the full
+        experience.
+      </p></noscript
+    >
+  </body>
+</html>

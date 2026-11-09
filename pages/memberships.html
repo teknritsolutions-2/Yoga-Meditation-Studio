@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Sola Studio — yoga, meditation, and a little breathing room. Discover your practice, explore sample classes, and find your rhythm."
+    />
+    <meta name="theme-color" content="#FCF7EE" />
+    <title>Find your rhythm · Sola Studio</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/graphics/logo.svg" />
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          JSON.parse(localStorage.getItem("sola-theme")) || "light";
+        document.documentElement.dir =
+          JSON.parse(localStorage.getItem("sola-direction")) || "ltr";
+      } catch (e) {}
+    </script>
+    <script defer src="../assets/js/site-config.js"></script>
+    <script defer src="../assets/js/class-data.js"></script>
+    <script defer src="../assets/js/membership-data.js"></script>
+    <script defer src="../assets/js/booking.js"></script>
+    <script defer src="../assets/js/main.js"></script>
+    <script defer src="../assets/js/public.js"></script>
+  </head>
+  <body data-page="memberships">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header" id="site-header"></header>
+    <main id="main">
+      <section class="wrap page-intro">
+        <div class="intro-row">
+          <div>
+            <span class="eyebrow">Make room for a little more you</span>
+            <h1>A practice for life.<br />A plan for <em>your rhythm.</em></h1>
+            <p>
+              Drop in, find a weekly ritual, or make the mat a regular part of
+              your day. Start where it feels right.
+            </p>
+          </div>
+          <img
+            class="intro-art"
+            src="../assets/graphics/organic-spiral.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+      </section>
+      <section class="wrap section-sm membership-all">
+        <div data-plans="single,five,ten,unlimited"></div>
+        <p class="schedule-note">
+          Example INR pricing. Sample membership models; no payment is
+          collected.
+        </p>
+      </section>
+      <section class="practice-section section">
+        <div class="wrap comparison">
+          <div>
+            <span class="eyebrow">Find your own balance</span>
+            <h2>How often would<br />you like to <em>show up?</em></h2>
+            <p>
+              Explore how the sample plans compare at your expected pace. Your
+              ideal fit depends on how often you attend and each pack’s
+              validity.
+            </p>
+            <div class="range-field">
+              <label for="classes-week"
+                >Classes per week
+                <strong><span id="week-value">2</span> classes</strong></label
+              ><input
+                type="range"
+                id="classes-week"
+                min="1"
+                max="7"
+                value="2"
+              />
+            </div>
+          </div>
+          <div
+            class="comparison-result"
+            id="plan-comparison"
+            aria-live="polite"
+          ></div>
+        </div>
+      </section>
+      <section class="wrap section">
+        <div class="first-visit">
+          <div>
+            <span class="eyebrow">Clear from the beginning</span>
+            <h2>A little clarity.<br /><em>A better practice.</em></h2>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary>What’s included?</summary>
+              <p>
+                Every sample plan covers regular Yoga, Meditation, and
+                Breathwork sessions. Workshops and special events are excluded.
+              </p>
+            </details>
+            <details>
+              <summary>When does my class pack expire?</summary>
+              <p>
+                Single Session: 7 days. Five-Class Pack: 30 days. Ten-Class
+                Pack: 60 days. Unlimited Monthly: 30 days. These proposed terms
+                are editable sample data.
+              </p>
+            </details>
+            <details>
+              <summary>Does my plan renew automatically?</summary>
+              <p>
+                No. The demo uses manual renewal requests. There is no connected
+                checkout, charge, automatic renewal, or completed purchase.
+              </p>
+            </details>
+            <details>
+              <summary>Can I change or renew a plan?</summary>
+              <p>
+                Open the member portal to preview a renewal or plan-change
+                request. Your active demo plan stays unchanged until you
+                explicitly select a different sample model in demo settings.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="site-footer"></footer>
+    <button class="back-top" aria-label="Back to top" id="back-top">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        aria-hidden="true"
+      >
+        <path d="m6 13 6-6 6 6m-6-6v14" />
+      </svg>
+    </button>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal" aria-label="Details">
+      <button class="icon-btn modal-close" aria-label="Close dialog">×</button>
+      <div id="modal-body"></div>
+    </dialog>
+    <noscript
+      ><p class="notice">
+        JavaScript is required for navigation controls, class schedules, and the
+        local demo dashboard. Please enable JavaScript to explore the full
+        experience.
+      </p></noscript
+    >
+  </body>
+</html>

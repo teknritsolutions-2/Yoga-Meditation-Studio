@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Sola Studio — yoga, meditation, and a little breathing room. Discover your practice, explore sample classes, and find your rhythm."
+    />
+    <meta name="theme-color" content="#FCF7EE" />
+    <title>Your member space · Sola Studio</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/graphics/logo.svg" />
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          JSON.parse(localStorage.getItem("sola-theme")) || "light";
+        document.documentElement.dir =
+          JSON.parse(localStorage.getItem("sola-direction")) || "ltr";
+      } catch (e) {}
+    </script>
+    <script defer src="../assets/js/site-config.js"></script>
+    <script defer src="../assets/js/class-data.js"></script>
+    <script defer src="../assets/js/membership-data.js"></script>
+    <script defer src="../assets/js/booking.js"></script>
+    <script defer src="../assets/js/main.js"></script>
+    <script defer src="../assets/js/public.js"></script>
+  </head>
+  <body data-page="login">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header" id="site-header"></header>
+    <main id="main">
+      <div class="login-layout">
+        <div class="login-art">
+          <img
+            class=""
+            src="../assets/images/meditation.jpg"
+            alt="Warm sunlight over a quiet meditation practice"
+            loading="eager"
+            decoding="async"
+          />
+          <div class="login-art-copy">
+            <span class="eyebrow" style="color: #f3c46c"
+              >A little time. Just for you.</span
+            >
+            <h2>
+              Come back<br />to your <em style="color: #f3c46c">centre.</em>
+            </h2>
+            <p>
+              Your practice, your people, your next moment on the mat. All in
+              one calm little space.
+            </p>
+          </div>
+        </div>
+        <div class="login-form-wrap">
+          <div class="login-form">
+            <span class="eyebrow">Your member space</span>
+            <h1>Welcome back.</h1>
+            <p>Your next moment on the mat starts here.</p>
+            <div id="login-context"></div>
+            <form id="login-form">
+              <div class="field">
+                <label for="login-email">Email address</label
+                ><input
+                  id="login-email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  placeholder="you@example.com"
+                />
+              </div>
+              <div class="field">
+                <label for="login-password">Password</label>
+                <div class="password-field">
+                  <input
+                    id="login-password"
+                    type="password"
+                    autocomplete="current-password"
+                    required
+                    minlength="8"
+                    placeholder="At least 8 characters"
+                  /><button
+                    type="button"
+                    id="show-password"
+                    aria-pressed="false"
+                  >
+                    Show
+                  </button>
+                </div>
+              </div>
+              <button class="btn outline" type="submit">Sign in</button>
+            </form>
+            <p class="form-feedback" id="login-feedback" role="status"></p>
+            <div class="login-divider">A little look around?</div>
+            <label class="checkbox-field" style="margin-bottom: 18px"
+              ><input type="checkbox" id="remember-demo" /> Remember demo access
+              on this device</label
+            ><button class="btn" id="enter-demo">
+              Explore demo member dashboard <span aria-hidden="true">↗</span>
+            </button>
+            <p class="notice">
+              Real sign-in isn’t configured. Use the demo to explore sample
+              bookings and memberships. Entered credentials are never stored or
+              sent.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer" id="site-footer"></footer>
+    <button class="back-top" aria-label="Back to top" id="back-top">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        aria-hidden="true"
+      >
+        <path d="m6 13 6-6 6 6m-6-6v14" />
+      </svg>
+    </button>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal" aria-label="Details">
+      <button class="icon-btn modal-close" aria-label="Close dialog">×</button>
+      <div id="modal-body"></div>
+    </dialog>
+    <noscript
+      ><p class="notice">
+        JavaScript is required for navigation controls, class schedules, and the
+        local demo dashboard. Please enable JavaScript to explore the full
+        experience.
+      </p></noscript
+    >
+  </body>
+</html>

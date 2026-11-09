@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Sola Studio — yoga, meditation, and a little breathing room. Discover your practice, explore sample classes, and find your rhythm."
+    />
+    <meta name="theme-color" content="#FCF7EE" />
+    <title>Find your next class · Sola Studio</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/graphics/logo.svg" />
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          JSON.parse(localStorage.getItem("sola-theme")) || "light";
+        document.documentElement.dir =
+          JSON.parse(localStorage.getItem("sola-direction")) || "ltr";
+      } catch (e) {}
+    </script>
+    <script defer src="../assets/js/site-config.js"></script>
+    <script defer src="../assets/js/class-data.js"></script>
+    <script defer src="../assets/js/membership-data.js"></script>
+    <script defer src="../assets/js/booking.js"></script>
+    <script defer src="../assets/js/main.js"></script>
+    <script defer src="../assets/js/public.js"></script>
+  </head>
+  <body data-page="classes">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header" id="site-header"></header>
+    <main id="main">
+      <section class="wrap page-intro">
+        <div class="intro-row">
+          <div>
+            <span class="eyebrow">A practice for every kind of day</span>
+            <h1>Move. Breathe.<br /><em>Find your rhythm.</em></h1>
+            <p>
+              From your first stretch to a deeper moment of stillness. Explore
+              the practice that meets you where you are.
+            </p>
+          </div>
+          <img
+            class="intro-art"
+            src="../assets/graphics/organic-spiral.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+      </section>
+      <section class="wrap section-sm">
+        <div
+          class="days"
+          id="style-chips"
+          aria-label="Filter by practice category"
+        ></div>
+        <form class="filters" id="class-filters">
+          <div class="field">
+            <label for="class-style">Practice style</label
+            ><select id="class-style">
+              <option value="all">All styles</option>
+              <option>Yoga</option>
+              <option>Meditation</option>
+              <option>Breathwork</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="class-level">Experience level</label
+            ><select id="class-level">
+              <option value="all">Any experience</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+              <option>All Levels</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="class-date">Day</label
+            ><select id="class-date">
+              <option value="all">All upcoming days</option>
+            </select>
+          </div>
+          <button class="btn outline" type="reset">Reset filters</button>
+        </form>
+        <p id="class-count" class="results-count" aria-live="polite"></p>
+        <div id="class-list"></div>
+        <button id="load-classes" class="btn outline" style="margin-top: 25px">
+          Show more sessions
+        </button>
+        <p class="schedule-note">
+          Sample schedule · All times in IST · Capacity is illustrative, not
+          live availability.
+        </p>
+      </section>
+      <section class="practice-section section">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Your week, at a glance</span>
+              <h2>A little structure.<br /><em>A lot of possibility.</em></h2>
+            </div>
+          </div>
+          <div
+            class="timetable"
+            id="weekly-timetable"
+            tabindex="0"
+            role="region"
+            aria-label="Weekly class timetable, scroll horizontally on small screens"
+          ></div>
+        </div>
+      </section>
+      <section class="wrap section">
+        <div class="first-visit">
+          <div>
+            <span class="eyebrow">New around here?</span>
+            <h2>Everything you need.<br /><em>Nothing to prove.</em></h2>
+            <p style="margin-top: 23px">
+              A few simple things to make your first visit feel a little more
+              familiar.
+            </p>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary>What should I bring?</summary>
+              <p>
+                Comfortable clothes, water, and your own mat if you prefer.
+                Confirm studio equipment with the team before your first visit.
+              </p>
+            </details>
+            <details>
+              <summary>Which class is right for a beginner?</summary>
+              <p>
+                Start with our Beginner Hatha or Restorative sessions. All
+                Levels classes also offer a welcoming place to begin.
+              </p>
+            </details>
+            <details>
+              <summary>How does demo booking work?</summary>
+              <p>
+                Choose a session and open the demo member dashboard. One credit
+                is held per eligible booking. Cancel any time before the sample
+                session starts to restore your credit. This is a demonstration
+                policy only.
+              </p>
+            </details>
+            <details>
+              <summary>Can I book without a membership?</summary>
+              <p>
+                Our illustrative Single Session plan gives you one credit. All
+                plans and prices are examples until the studio confirms its
+                offerings.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="site-footer"></footer>
+    <button class="back-top" aria-label="Back to top" id="back-top">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        aria-hidden="true"
+      >
+        <path d="m6 13 6-6 6 6m-6-6v14" />
+      </svg>
+    </button>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal" aria-label="Details">
+      <button class="icon-btn modal-close" aria-label="Close dialog">×</button>
+      <div id="modal-body"></div>
+    </dialog>
+    <noscript
+      ><p class="notice">
+        JavaScript is required for navigation controls, class schedules, and the
+        local demo dashboard. Please enable JavaScript to explore the full
+        experience.
+      </p></noscript
+    >
+  </body>
+</html>

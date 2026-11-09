@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Sola Studio — yoga, meditation, and a little breathing room. Discover your practice, explore sample classes, and find your rhythm."
+    />
+    <meta name="theme-color" content="#FCF7EE" />
+    <title>Your practice, all together · Sola Studio</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/graphics/logo.svg" />
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          JSON.parse(localStorage.getItem("sola-theme")) || "light";
+        document.documentElement.dir =
+          JSON.parse(localStorage.getItem("sola-direction")) || "ltr";
+      } catch (e) {}
+    </script>
+    <script defer src="../assets/js/site-config.js"></script>
+    <script defer src="../assets/js/class-data.js"></script>
+    <script defer src="../assets/js/membership-data.js"></script>
+    <script defer src="../assets/js/booking.js"></script>
+    <script defer src="../assets/js/main.js"></script>
+    <script defer src="../assets/js/dashboard.js"></script>
+  </head>
+  <body data-page="dashboard">
+    <a class="skip" href="#main">Skip to content</a>
+    <div id="dashboard-app"></div>
+    <button class="back-top" aria-label="Back to top" id="back-top">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        aria-hidden="true"
+      >
+        <path d="m6 13 6-6 6 6m-6-6v14" />
+      </svg>
+    </button>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal" aria-label="Details">
+      <button class="icon-btn modal-close" aria-label="Close dialog">×</button>
+      <div id="modal-body"></div>
+    </dialog>
+    <noscript
+      ><p class="notice">
+        JavaScript is required for navigation controls, class schedules, and the
+        local demo dashboard. Please enable JavaScript to explore the full
+        experience.
+      </p></noscript
+    >
+  </body>
+</html>

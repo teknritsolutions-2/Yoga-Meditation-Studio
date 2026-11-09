@@ -1,0 +1,26 @@
+[dir="rtl"] .btn > svg,
+[dir="rtl"] .text-link > svg,
+[dir="rtl"] .guide-name > svg {
+  transform: scaleX(-1);
+}
+[dir="rtl"] .brand {
+  direction: ltr;
+}
+[dir="rtl"] .solar-orbit {
+  animation-direction: reverse;
+}
+[dir="rtl"] input[type="email"] {
+  direction: ltr;
+  text-align: right;
+}
+[dir="rtl"] .practice-tab[aria-selected="true"] svg {
+  transform: rotate(215deg);
+}
+@media (max-width: 960px) {
+  [dir="rtl"] .dashboard-sidebar {
+    transform: translateX(105%);
+  }
+  [dir="rtl"] .dashboard-shell.drawer-open .dashboard-sidebar {
+    transform: none;
+  }
+}

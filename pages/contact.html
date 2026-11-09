@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Sola Studio — yoga, meditation, and a little breathing room. Discover your practice, explore sample classes, and find your rhythm."
+    />
+    <meta name="theme-color" content="#FCF7EE" />
+    <title>Come say hello · Sola Studio</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/graphics/logo.svg" />
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          JSON.parse(localStorage.getItem("sola-theme")) || "light";
+        document.documentElement.dir =
+          JSON.parse(localStorage.getItem("sola-direction")) || "ltr";
+      } catch (e) {}
+    </script>
+    <script defer src="../assets/js/site-config.js"></script>
+    <script defer src="../assets/js/class-data.js"></script>
+    <script defer src="../assets/js/membership-data.js"></script>
+    <script defer src="../assets/js/booking.js"></script>
+    <script defer src="../assets/js/main.js"></script>
+    <script defer src="../assets/js/public.js"></script>
+  </head>
+  <body data-page="contact">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header" id="site-header"></header>
+    <main id="main">
+      <section class="wrap page-intro">
+        <span class="eyebrow">A little hello goes a long way</span>
+        <h1>Your next chapter<br />starts with <em>hello.</em></h1>
+        <p>
+          Curious about a first class, the right practice, or making room for
+          Sola in your week? Start here.
+        </p>
+      </section>
+      <section class="wrap section-sm">
+        <div class="contact-grid">
+          <div class="contact-visual">
+            <img
+              class=""
+              src="../assets/images/studio-light.jpg"
+              alt="A bright yoga studio with space to practise"
+              loading="eager"
+              decoding="async"
+            />
+            <h3>A space worth coming back to.</h3>
+            <p>
+              This is a demonstration studio website. Location, contact details,
+              and operating hours will appear here once the studio provides
+              them.
+            </p>
+            <div class="notice">
+              Studio location and hours to be confirmed. A map will be available
+              when a real address is configured.
+            </div>
+          </div>
+          <div>
+            <span class="eyebrow">Let’s find your starting point</span>
+            <h2 style="font-size: 36px; margin-bottom: 25px">
+              What’s on your mind?
+            </h2>
+            <form class="form-grid" id="contact-form">
+              <div class="field">
+                <label for="contact-name">Your name</label
+                ><input
+                  id="contact-name"
+                  name="name"
+                  required
+                  maxlength="80"
+                  autocomplete="name"
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="field">
+                <label for="contact-email">Email address</label
+                ><input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                />
+              </div>
+              <div class="field wide">
+                <label for="contact-topic">I’m curious about</label
+                ><select id="contact-topic" name="topic">
+                  <option>My first class</option>
+                  <option>Memberships</option>
+                  <option>Class enquiry</option>
+                  <option>Workshop</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field wide">
+                <label for="contact-message">Your message</label
+                ><textarea
+                  id="contact-message"
+                  name="message"
+                  required
+                  minlength="10"
+                  maxlength="2000"
+                  placeholder="A little about what you’re looking for…"
+                ></textarea>
+              </div>
+              <label class="checkbox-field wide"
+                ><input type="checkbox" required /> I understand this form
+                creates a local enquiry preview and does not send a
+                message.</label
+              >
+              <div class="wide">
+                <button class="btn" type="submit">
+                  Preview my enquiry <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </form>
+            <p class="schedule-note">
+              Your enquiry is not saved or sent. Studio contact details are
+              awaiting configuration.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="site-footer"></footer>
+    <button class="back-top" aria-label="Back to top" id="back-top">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        aria-hidden="true"
+      >
+        <path d="m6 13 6-6 6 6m-6-6v14" />
+      </svg>
+    </button>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal" aria-label="Details">
+      <button class="icon-btn modal-close" aria-label="Close dialog">×</button>
+      <div id="modal-body"></div>
+    </dialog>
+    <noscript
+      ><p class="notice">
+        JavaScript is required for navigation controls, class schedules, and the
+        local demo dashboard. Please enable JavaScript to explore the full
+        experience.
+      </p></noscript
+    >
+  </body>
+</html>
