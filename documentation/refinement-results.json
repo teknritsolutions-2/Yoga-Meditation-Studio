@@ -1014,5 +1014,14 @@
   "limits": [
     "Chromium/Brave only; no physical-device or assistive-technology certification",
     "Authentication, booking inventory, payments, and message delivery remain local demonstrations"
-  ]
+  ],
+  "direction_switch": {
+    "checks": [
+      "Immediate direction toggle and drawer open/close @ 320",
+      "Immediate direction toggle and drawer open/close @ 390",
+      "Immediate direction toggle and drawer open/close @ 768",
+      "Desktop sidebar remains visible"
+    ],
+    "errors": []
+  }
 }

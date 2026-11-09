@@ -81,3 +81,7 @@ Additional reviewed sections: [tablet closing panel](visual-review/after-closing
 - No JavaScript errors, broken images, document overflow, or visible functional text below 13px in the visual matrix. Decorative eyebrows and the wordmark are deliberately excluded from that size threshold.
 
 A transient localhost font-request reset interrupted one edge-suite attempt. The QA helper now waits for fonts between subpath navigations and retries transport resets; the subsequent complete suite passed. No website asset or booking-logic change was needed for that test harness issue.
+
+### Immediate RTL switching
+
+The final live screenshot exposed a brief closed-drawer transition across the content during an LTR/RTL switch. Inert mobile drawers now remain visually hidden, while open drawers retain their normal navigation behaviour. English paragraphs, formatted prices, and statistics metadata use appropriate bidirectional isolation within the RTL layout. Four focused checks cover immediate switches, drawer opening, Escape dismissal, credit consistency, and the desktop sidebar at 320, 390, 768, and 1024px. See [the corrected RTL workspace](visual-review/after-dashboard-rtl.png).

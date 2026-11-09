@@ -24,3 +24,12 @@
     transform: none;
   }
 }
+/* Keep English copy and formatted prices legible within the RTL layout. */
+[dir="rtl"] :is(h1, h2, h3, p) {
+  unicode-bidi: plaintext;
+  text-align: right;
+}
+[dir="rtl"] .price {
+  direction: ltr;
+  text-align: right;
+}

@@ -137,7 +137,7 @@ function overview(s) {
   ]
     .map(
       ([label, n, sub, i]) =>
-        `<article class="stat-card"><div>${label}${icon(i, 19)}</div><strong class="${typeof n === "string" ? "stat-value-label" : "stat-value"}">${n}</strong><small>${sub}</small></article>`,
+        `<article class="stat-card"><div>${label}${icon(i, 19)}</div><strong class="${typeof n === "string" ? "stat-value-label" : "stat-value"}">${n}</strong><small><bdi>${sub}</bdi></small></article>`,
     )
     .join(
       "",

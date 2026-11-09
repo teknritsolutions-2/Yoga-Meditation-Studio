@@ -2454,6 +2454,10 @@ textarea {
     height: 100dvh;
     width: 280px;
   }
+  .dashboard-sidebar[inert] {
+    visibility: hidden;
+    transition: none;
+  }
   .dashboard-shell.drawer-open .dashboard-sidebar {
     transform: none;
   }
