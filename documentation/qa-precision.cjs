@@ -82,7 +82,7 @@ const fs = require("node:fs");
           (
             await page
               .locator(".footer-group a")
-              .filter({ hasText: "Member Dashboard" })
+              .filter({ hasText: "Dashboard" })
               .getAttribute("href")
           ).endsWith("dashboard.html"),
         );

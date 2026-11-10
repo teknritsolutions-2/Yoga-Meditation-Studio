@@ -9,6 +9,7 @@ function mountPublic() {
     ["classes", "Classes"],
     ["instructors", "Instructors"],
     ["memberships", "Membership plans"],
+    ["dashboard", "Dashboard"],
     ["contact", "Contact"],
   ];
   $("#site-header").innerHTML =
@@ -26,9 +27,9 @@ function mountPublic() {
     [
       "Membership",
       [
-        ["memberships", "Membership Plans"],
-        ["login", "Member Login"],
-        ["dashboard", "Member Dashboard"],
+        ["memberships", "Plans"],
+        ["login", "Login"],
+        ["dashboard", "Dashboard"],
       ],
     ],
     ["Connect", [["contact", "Contact"]]],
