@@ -74,7 +74,10 @@ fs.mkdirSync(OUT, { recursive: true });
   ]) {
     await p.goto("http://127.0.0.1:4173/studio/" + file);
     await p.evaluate(() => document.fonts.ready);
-    assert.equal(await p.locator("h1").count(), 1);
+    assert.equal(
+      await p.locator("h1").count(),
+      /pages\/(login|signup)\.html$/.test(file) ? 0 : 1,
+    );
     const broken = await p.evaluate(async () => {
       for (const im of document.images) im.loading = "eager";
       await Promise.all(
