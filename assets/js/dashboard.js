@@ -15,13 +15,18 @@ let drawerFocus = null;
 function dashboardShell() {
   const s = getState();
   $("#dashboard-app").innerHTML =
-    `<div class="dashboard-shell"><button class="drawer-backdrop" aria-label="Close workspace navigation" tabindex="-1"></button><aside id="workspace-nav" class="dashboard-sidebar" aria-label="Member workspace navigation">${brand().replace(pageURL("home"), pageURL("dashboard") + "#overview")}<span class="sidebar-label">YOUR PRACTICE SPACE</span><nav class="dashboard-nav">${DASH_NAV.map(([id, label, ico]) => `<a href="#${id}" data-section="${id}">${icon(ico, 18)}${label}</a>`).join("")}</nav><div class="sidebar-bottom"><button id="exit-demo">${icon("exit", 17)} Exit workspace</button></div></aside><div class="dashboard-main"><header class="dashboard-topbar"><button class="icon-btn dashboard-menu" aria-label="Open workspace navigation" aria-expanded="false" aria-controls="workspace-nav">${icon("menu")}</button><span>A little more space for your practice.</span><div class="actions">${utilities()}<a href="#notifications" class="icon-btn" aria-label="View notifications">${icon("bell", 18)}</a><a href="#profile" class="avatar" aria-label="Open profile">${esc(s.profile.name.slice(0, 1).toUpperCase())}</a></div></header><main class="dashboard-content" id="main" tabindex="-1"></main></div></div>`;
+    `<div class="dashboard-shell"><button class="drawer-backdrop" aria-label="Close workspace navigation" tabindex="-1"></button><aside id="workspace-nav" class="dashboard-sidebar" aria-label="Member workspace navigation">${brand().replace(pageURL("home"), pageURL("dashboard") + "#overview")}<span class="sidebar-label">YOUR PRACTICE SPACE</span><nav class="dashboard-nav">${DASH_NAV.map(([id, label, ico]) => `<a href="#${id}" data-section="${id}">${icon(ico, 18)}${label}</a>`).join("")}</nav><div class="sidebar-bottom"><div class="sidebar-display-controls"></div><button id="exit-demo">${icon("exit", 17)} Exit workspace</button></div></aside><div class="dashboard-main"><header class="dashboard-topbar"><button class="icon-btn dashboard-menu" aria-label="Open workspace navigation" aria-expanded="false" aria-controls="workspace-nav">${icon("menu")}</button><span class="dashboard-tagline">A little more space for your practice.</span><div class="dashboard-brand">${brand()}</div><div class="actions"><div class="display-controls">${utilities()}</div><a href="#notifications" class="icon-btn" aria-label="View notifications">${icon("bell", 18)}</a><a href="#profile" class="avatar" aria-label="Open profile">${esc(s.profile.name.slice(0, 1).toUpperCase())}</a></div></header><main class="dashboard-content" id="main" tabindex="-1"></main></div></div>`;
   $("#exit-demo").addEventListener("click", exitDemo);
   $(".dashboard-menu").addEventListener("click", () => toggleDrawer());
   $(".drawer-backdrop").addEventListener("click", () => toggleDrawer(false));
   applyTheme();
-  const mobile = matchMedia("(max-width:960px)");
+  const mobile = matchMedia("(max-width:1190px)");
   const sync = () => {
+    const tools = $(".display-controls");
+    (mobile.matches
+      ? $(".sidebar-display-controls")
+      : $(".dashboard-topbar .actions")
+    ).prepend(tools);
     if (!mobile.matches) {
       $(".dashboard-shell").classList.remove("drawer-open");
       document.body.style.overflow = "";
@@ -48,14 +53,14 @@ function toggleDrawer(force) {
   shell.classList.toggle("drawer-open", open);
   $(".dashboard-menu").setAttribute("aria-expanded", open);
   $(".dashboard-sidebar").inert =
-    matchMedia("(max-width:960px)").matches && !open;
+    matchMedia("(max-width:1190px)").matches && !open;
   if (open) {
     drawerFocus = document.activeElement;
     $(".dashboard-nav a").focus();
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "";
-    drawerFocus?.focus();
+    drawerFocus?.focus({ preventScroll: true });
   }
 }
 function dashHeading(title, desc, action = "") {
@@ -385,7 +390,9 @@ document.addEventListener("keydown", (e) => {
     return;
   }
   if (e.key === "Tab") {
-    const items = $$("a,button", $(".dashboard-sidebar"));
+    const items = $$("a,button", $(".dashboard-sidebar")).filter(
+      (el) => el.getClientRects().length,
+    );
     const first = items[0],
       last = items.at(-1);
     if (e.shiftKey && document.activeElement === first) {

@@ -382,6 +382,15 @@ em {
   align-items: center;
   gap: 7px;
 }
+.display-controls {
+  display: flex;
+  gap: 8px;
+}
+.nav-panel-tools,
+.dashboard-brand,
+.sidebar-display-controls {
+  display: none;
+}
 .direction-toggle {
   font-size: 13px;
   font-weight: 700;
@@ -461,6 +470,14 @@ em {
   color: var(--muted);
 }
 @media (max-width: 1190px) {
+  .nav-tools > .display-controls,
+  .nav-tools > .nav-login,
+  .dashboard-topbar .actions > .display-controls {
+    display: none;
+  }
+  .sidebar-display-controls {
+    display: block;
+  }
   .hero-heading {
     gap: 28px;
   }
@@ -1036,6 +1053,9 @@ select {
   background-repeat: no-repeat;
   background-position: right 16px center;
   background-size: 16px;
+}
+.compact-select {
+  display: none;
 }
 textarea {
   resize: vertical;
@@ -2230,13 +2250,74 @@ textarea {
   }
 }
 @media (max-width: 1190px) {
+  .compact-select-native {
+    display: none;
+  }
+  .compact-select {
+    display: block;
+    position: relative;
+    min-width: 0;
+  }
+  .compact-select-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    min-height: 52px;
+    padding: 12px 16px;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    text-align: start;
+  }
+  .compact-select-trigger svg {
+    flex-shrink: 0;
+  }
+  .compact-select-options {
+    position: absolute;
+    inset-inline: 0;
+    top: calc(100% + 6px);
+    z-index: 60;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 6px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--paper);
+    color: var(--ink);
+    box-shadow: var(--shadow);
+  }
+  .compact-select-options[hidden] {
+    display: none;
+  }
+  .menu-above .compact-select-options {
+    top: auto;
+    bottom: calc(100% + 6px);
+  }
+  .compact-select-option {
+    padding: 12px;
+    min-height: 48px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .compact-select-option:is(:hover, .is-active),
+  .compact-select-option[aria-selected="true"] {
+    background: var(--surface);
+    color: var(--ink);
+  }
   .public-nav {
     display: none;
     position: absolute;
     top: var(--header);
-    left: 0;
-    right: 0;
-    padding: 20px 32px;
+    inset-inline-end: 0;
+    width: min(380px, calc(100% - 24px));
+    height: calc(100dvh - var(--header));
+    padding: 20px 28px;
     background: var(--paper);
     border-bottom: 1px solid var(--line);
     box-shadow: var(--shadow);
@@ -2254,8 +2335,22 @@ textarea {
     z-index: 0;
   }
   .public-nav.open {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     gap: 2px;
+  }
+  .nav-panel-tools {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding-block: 22px;
+    border-top: 1px solid var(--line);
+    margin-top: 16px;
+  }
+  .nav-panel-tools .nav-login {
+    margin: 0;
   }
   .public-nav > a,
   .home-menu > summary {
@@ -2363,9 +2458,6 @@ textarea {
     font-size: 15px;
   }
 
-  .dashboard-shell {
-    grid-template-columns: 215px 1fr;
-  }
   .dashboard-sidebar {
     padding-inline: 16px;
   }
@@ -2374,6 +2466,49 @@ textarea {
   }
   .dashboard-topbar {
     padding-inline: 26px;
+  }
+  .dashboard-shell {
+    display: block;
+  }
+  .dashboard-sidebar {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-start: 0;
+    transform: translateX(-105%);
+    transition: transform 0.25s;
+    height: 100dvh;
+    width: 280px;
+  }
+  .dashboard-sidebar[inert] {
+    visibility: hidden;
+    transition: none;
+  }
+  .dashboard-shell.drawer-open .dashboard-sidebar {
+    transform: none;
+  }
+  .dashboard-shell.drawer-open .drawer-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #211c1980;
+    z-index: 65;
+  }
+  .dashboard-menu {
+    display: flex;
+    order: 3;
+  }
+  .dashboard-topbar > .dashboard-tagline {
+    display: none;
+  }
+  .dashboard-brand {
+    display: block;
+    margin-inline-end: auto;
+  }
+  .dashboard-topbar .actions {
+    margin-inline-start: 0;
+  }
+  .sidebar-display-controls .display-controls {
+    gap: 12px;
   }
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -2399,11 +2534,14 @@ textarea {
     display: none;
   }
   .footer-top {
-    grid-template-columns: 1.3fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 36px;
   }
+  .footer-brand {
+    grid-column: 1/-1;
+  }
   .footer-group:last-child {
-    grid-column: 2;
+    grid-column: auto;
   }
   .guide-feature {
     grid-template-columns: 1.1fr 1fr;
@@ -2553,7 +2691,7 @@ textarea {
   }
   .plans-grid {
     grid-template-columns: 1fr;
-    max-width: 620px;
+    max-width: none;
     margin-inline: auto;
     gap: 28px;
   }
@@ -2611,41 +2749,6 @@ textarea {
   }
   .first-visit {
     gap: 50px;
-  }
-  .dashboard-shell {
-    display: block;
-  }
-  .dashboard-sidebar {
-    position: fixed;
-    inset-block: 0;
-    inset-inline-start: 0;
-    transform: translateX(-105%);
-    transition: transform 0.25s;
-    height: 100dvh;
-    width: 280px;
-  }
-  .dashboard-sidebar[inert] {
-    visibility: hidden;
-    transition: none;
-  }
-  .dashboard-shell.drawer-open .dashboard-sidebar {
-    transform: none;
-  }
-  .dashboard-shell.drawer-open .drawer-backdrop {
-    display: block;
-    position: fixed;
-    inset: 0;
-    background: #211c1980;
-    z-index: 65;
-  }
-  .dashboard-menu {
-    display: flex;
-  }
-  .dashboard-content .session-row {
-    flex-wrap: wrap;
-  }
-  .dashboard-topbar > span {
-    margin-inline-end: auto;
   }
   .session-level {
     display: none;
@@ -2747,9 +2850,6 @@ textarea {
   .nav-tools .icon-btn {
     width: 44px;
     height: 44px;
-  }
-  .nav-login {
-    display: none;
   }
   .brand {
     gap: 7px;
@@ -3024,12 +3124,13 @@ textarea {
   .dashboard-topbar {
     padding-inline: 18px;
     height: 70px;
+    gap: 10px;
   }
   .dashboard-topbar > span {
     display: none;
   }
   .dashboard-topbar .actions {
-    margin-inline-start: auto;
+    margin-inline-start: 0;
     gap: 7px;
   }
   .dashboard-content {
@@ -3421,11 +3522,6 @@ textarea {
   *:after {
     animation: none !important;
     transition: none !important;
-  }
-}
-@media (min-width: 701px) {
-  .public-nav .mobile-login {
-    display: none;
   }
 }
 @media (max-height: 740px) and (min-width: 961px) {

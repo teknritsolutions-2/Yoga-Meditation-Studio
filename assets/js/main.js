@@ -13,7 +13,7 @@ function mountPublic() {
     ["contact", "Contact"],
   ];
   $("#site-header").innerHTML =
-    `<div class="nav-wrap">${brand()}<nav class="public-nav" aria-label="Main navigation" id="public-nav"><details class="home-menu"><summary ${["home", "home2"].includes(current) ? 'data-current="true"' : ""}>Home ${icon("chevron", 13)}</summary><div class="dropdown"><a href="${pageURL("home")}" ${current === "home" ? 'aria-current="page"' : ""}>Home 1 · The studio</a><a href="${pageURL("home2")}" ${current === "home2" ? 'aria-current="page"' : ""}>Home 2 · Your practice</a></div></details>${nav.map(([p, l]) => `<a href="${pageURL(p)}" ${current === p ? 'aria-current="page"' : ""}>${l}</a>`).join("")}<a class="mobile-login" href="${pageURL("login")}">Login</a></nav><div class="nav-tools">${utilities()}<a class="btn small nav-login" href="${pageURL("login")}">Login ${icon("arrow", 15)}</a><button class="icon-btn mobile-menu" aria-label="Open navigation" aria-expanded="false" aria-controls="public-nav">${icon("menu")}</button></div></div><button class="nav-backdrop" aria-label="Close navigation" tabindex="-1"></button>`;
+    `<div class="nav-wrap">${brand()}<nav class="public-nav" aria-label="Main navigation" id="public-nav"><details class="home-menu"><summary ${["home", "home2"].includes(current) ? 'data-current="true"' : ""}>Home ${icon("chevron", 13)}</summary><div class="dropdown"><a href="${pageURL("home")}" ${current === "home" ? 'aria-current="page"' : ""}>Home 1 · The studio</a><a href="${pageURL("home2")}" ${current === "home2" ? 'aria-current="page"' : ""}>Home 2 · Your practice</a></div></details>${nav.map(([p, l]) => `<a href="${pageURL(p)}" ${current === p ? 'aria-current="page"' : ""}>${l}</a>`).join("")}<div class="nav-panel-tools"></div></nav><div class="nav-tools"><div class="display-controls">${utilities()}</div><a class="btn small nav-login" href="${pageURL("login")}">Login ${icon("arrow", 15)}</a><button class="icon-btn mobile-menu" aria-label="Open navigation" aria-expanded="false" aria-controls="public-nav">${icon("menu")}</button></div></div><button class="nav-backdrop" aria-label="Close navigation" tabindex="-1"></button>`;
   const footerGroups = [
     [
       "Explore",
@@ -88,6 +88,15 @@ function mountPublic() {
       first.focus({ preventScroll: true });
     }
   });
+  const compactNavigation = matchMedia("(max-width:1190px)");
+  function arrangePublicTools() {
+    const target = compactNavigation.matches
+      ? $(".nav-panel-tools")
+      : $(".nav-tools");
+    target.prepend($(".display-controls"), $(".nav-login"));
+  }
+  arrangePublicTools();
+  compactNavigation.addEventListener("change", arrangePublicTools);
   $("#asset-credits").addEventListener("click", () =>
     dialog(
       `<span class="eyebrow">A little credit where it’s due</span><h2>Art, with intention.</h2><p>Spiral, organic ripple and reflective-ring geometry sourced from the actual fffuel generators and recoloured for Sola.</p><p><a class="text-link" href="https://www.fffuel.co/" target="_blank" rel="noopener">fffuel artwork</a> · <a href="https://www.fffuel.co/license/" target="_blank" rel="noopener">Commercial-use licence</a></p><p>Photography from <a class="text-link" href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash</a> and <a class="text-link" href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels</a>. Photography depicts independent yoga practitioners. Profile names are editorial concepts, not verified Sola staff biographies.</p><p>Fraunces by Undercase Type and Manrope by Mikhail Sharanda, SIL Open Font License. </p>`,

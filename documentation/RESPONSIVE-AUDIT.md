@@ -1,5 +1,7 @@
 # Sola Studio responsive audit
 
+The later [compact navigation and tablet follow-up](COMPACT-NAVIGATION.md) supersedes the header control placement, dashboard drawer breakpoint, compact Classes select UI and tablet footer arrangement described in this historical audit.
+
 Verified 10 November 2026. Baseline: `610d97c`. All nine physical pages and all seven dashboard sections were inspected, with full-page scrolling and actual screenshots before and after changes. The site remains buildless HTML/CSS/vanilla JavaScript.
 
 ## Coverage

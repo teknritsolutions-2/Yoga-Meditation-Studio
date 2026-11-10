@@ -155,7 +155,7 @@ const assert = require("node:assert/strict"),
             .evaluateAll(
               (es) => es.filter((e) => e.getClientRects().length).length,
             );
-          assert.equal(visibleLogin, width <= 700 ? 0 : 1);
+          assert.equal(visibleLogin, 0);
           checks.push(
             `Sticky menu/Home/Escape/focus/scroll ${file} ${width} ${theme} ${dir} ${location}`,
           );
@@ -169,7 +169,8 @@ const assert = require("node:assert/strict"),
   await p.locator(".theme-toggle").click();
   await p.locator(".direction-toggle").click();
   assert(await p.locator("main").evaluate((e) => e.inert));
-  await p.locator(".nav-backdrop").click({ position: { x: 10, y: 700 } });
+  const panel = await p.locator(".public-nav").boundingBox();
+  await p.mouse.click(panel.x > 0 ? 10 : 380, 780);
   assert.equal(await p.locator("main").evaluate((e) => e.inert), false);
   checks.push(
     "Theme/direction switching and backdrop dismissal while menu is open",
@@ -215,7 +216,7 @@ const assert = require("node:assert/strict"),
         ),
         false,
       );
-      if (width <= 960) {
+      if (width <= 1190) {
         await p.locator(".dashboard-menu").click();
         assert.equal(
           await p.locator(".dashboard-sidebar").evaluate((e) => e.inert),

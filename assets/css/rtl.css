@@ -14,7 +14,7 @@
 [dir="rtl"] .practice-tab[aria-selected="true"] svg {
   transform: rotate(215deg);
 }
-@media (max-width: 960px) {
+@media (max-width: 1190px) {
   [dir="rtl"] .dashboard-sidebar {
     transform: translateX(105%);
   }

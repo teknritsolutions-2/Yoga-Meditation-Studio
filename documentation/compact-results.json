@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-10",
+  "baselineCommit": "3c4bb30",
+  "suites": {
+    "targetedChromium": {
+      "checks": 193,
+      "errors": [],
+      "failures": []
+    },
+    "targetedWebKit": {
+      "checks": 193,
+      "errors": [],
+      "failures": []
+    },
+    "navigationChromium": {
+      "checks": 478,
+      "errors": [],
+      "failures": []
+    },
+    "navigationWebKit": {
+      "checks": 478,
+      "errors": [],
+      "failures": []
+    },
+    "layoutChromium": {
+      "checks": 1380,
+      "errors": [],
+      "failures": [],
+      "widths": [
+        320,
+        360,
+        390,
+        425,
+        430,
+        599,
+        600,
+        680,
+        681,
+        699,
+        700,
+        701,
+        768,
+        820,
+        959,
+        960,
+        961,
+        1024,
+        1180,
+        1190,
+        1191,
+        1280,
+        1440
+      ]
+    },
+    "layoutWebKit": {
+      "checks": 300,
+      "errors": [],
+      "failures": [],
+      "widths": [
+        320,
+        390,
+        820,
+        1024,
+        1440
+      ]
+    },
+    "functionalRegression": {
+      "checks": 88,
+      "errors": [],
+      "failures": []
+    }
+  },
+  "authoredReferences": {
+    "checked": 168,
+    "missing": 0
+  },
+  "productionJavaScriptSyntaxFiles": 10
+}

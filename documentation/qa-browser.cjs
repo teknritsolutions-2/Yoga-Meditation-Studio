@@ -257,6 +257,7 @@ const ROOT = "http://127.0.0.1:4173";
     await p.locator(".mobile-menu").getAttribute("aria-expanded"),
     "false",
   );
+  await p.locator(".mobile-menu").click();
   await p.locator(".theme-toggle").click();
   await p.locator(".direction-toggle").click();
   await p.reload();

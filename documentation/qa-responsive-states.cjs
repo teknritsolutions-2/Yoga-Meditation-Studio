@@ -52,8 +52,10 @@ const { chromium } = require(process.env.SOLA_PLAYWRIGHT || "playwright"),
       await p.goto(root + "/pages/classes.html");
       await p.locator("[data-week-day]").last().click();
       await shot(`weekly-selected-${width}-${dir}`, ".weekly-explorer");
-      await p.locator("#class-style").selectOption("Meditation");
-      await p.locator("#class-level").selectOption("Advanced");
+      await p
+        .locator("#class-style")
+        .selectOption("Meditation", { force: true });
+      await p.locator("#class-level").selectOption("Advanced", { force: true });
       await shot(`empty-classes-${width}-${dir}`, "#class-filters");
       assert.equal(await p.locator("#class-list .session-row").count(), 0);
       await p.locator("#class-filters button[type=reset]").click();

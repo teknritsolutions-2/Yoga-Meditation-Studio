@@ -68,4 +68,6 @@ URLs and local font/image paths work under a repository subpath as well as a dom
 
 ## Verification and asset records
 
+The latest [compact navigation and tablet follow-up](documentation/COMPACT-NAVIGATION.md) records the panel controls, branded dashboard header, widened pricing cards, footer alignment and anchored Classes filters.
+
 See [the responsive audit](documentation/RESPONSIVE-AUDIT.md) for the current sitewide mobile/tablet corrections, browser coverage, before/after screenshots and lessons from previous projects. `documentation/HOME-HERO.md` records the Home 1 layout and soft wave artwork. Previous visual/navigation corrections are in `documentation/PRECISION.md`. The preceding targeted redesign is recorded in `documentation/REDESIGN.md`. Earlier records are in `documentation/REFINEMENT.md` and `documentation/QA.md`. Technical details and sources are in `documentation/ARCHITECTURE.md`, and `documentation/ASSET-CREDITS.md`. Open-font license notices are included in `assets/fonts/`.
