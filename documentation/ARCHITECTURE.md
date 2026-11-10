@@ -26,7 +26,7 @@ Renewal requests are separate state records. They never alter a plan, expiry, or
 
 Cream/ivory canvas, cocoa typography, clay accents, and saffron decorative sections. Locally served Fraunces and Manrope. Rounded photographs, asymmetrical editorial groupings, a tabbed practice selector, horizontal session rows, and a clean member workspace supply different layout rhythms.
 
-Four principal art treatments use four sourced fffuel SVG assets: the static warm cccoil hero spiral; the static organic spiral beside the second homepage hero; reflective meditation rings; and sourced organic-ripple contours in the workshop editorial panel. The original generator geometry is preserved rather than introducing arbitrary hand-drawn paths.
+Four principal art treatments use four sourced fffuel SVG assets: the restored static warm concentric hero spiral; the static dotted organic spiral beside the second homepage hero and in the Classes banner; reflective meditation rings; and sourced organic-ripple contours in the workshop editorial panel. The original generator geometry is preserved rather than introducing arbitrary hand-drawn paths.
 
 Artwork is static. The hero photograph has a short .65-second entrance suppressed by `prefers-reduced-motion`; playback controls and their handlers were removed. Decorative SVGs have transparent backgrounds; no checkerboard or white matte is embedded. Photographs are never mirrored in RTL.
 
@@ -38,4 +38,4 @@ Theme tokens apply to forms, cards, filters, dialogs, and the dashboard. Logical
 
 ## Deliberate integration boundaries
 
-No authentication provider, payments, email delivery, studio inventory, map, or real-time availability is connected. No admin portal is included. Contact information and hours remain unconfigured, and action feedback explains local storage or missing integrations where relevant. Login and sign-up are separate physical standalone pages with validation and actual provider marks; no public navbar/footer appears on either or on the dashboard. The dashboard remains directly accessible.
+No authentication provider, payments, email delivery, studio inventory, map, or real-time availability is connected. No admin portal is included. Contact information and hours remain unconfigured, and action feedback explains local storage or missing integrations where relevant. Login and sign-up are separate physical standalone pages with clickable home branding, validation and actual provider marks; no public navbar/footer appears on either or on the dashboard. The dashboard remains directly accessible.

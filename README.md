@@ -68,4 +68,4 @@ URLs and local font/image paths work under a repository subpath as well as a dom
 
 ## Verification and asset records
 
-See `documentation/REDESIGN.md` for the latest targeted redesign, test results, and visual evidence. Earlier records are in `documentation/REFINEMENT.md` and `documentation/QA.md`. Technical details and sources are in `documentation/ARCHITECTURE.md`, and `documentation/ASSET-CREDITS.md`. Open-font license notices are included in `assets/fonts/`.
+See `documentation/PRECISION.md` for the latest visual/navigation corrections and verification. The preceding targeted redesign is recorded in `documentation/REDESIGN.md`. Earlier records are in `documentation/REFINEMENT.md` and `documentation/QA.md`. Technical details and sources are in `documentation/ARCHITECTURE.md`, and `documentation/ASSET-CREDITS.md`. Open-font license notices are included in `assets/fonts/`.

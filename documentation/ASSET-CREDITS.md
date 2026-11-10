@@ -6,7 +6,7 @@ Reviewed 9 November 2026. Assets are stored locally and used within this website
 
 | Source                                    | Result                                                                                                                                                 |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| https://www.fffuel.co/cccoil/             | Actual generator exported warm gradient spiral geometry for `solar-orbit.svg`; replaces the earlier dashed vvvortex asset.                             |
+| https://www.fffuel.co/vvvortex/           | Original warm concentric geometry restored byte-for-byte from commit `43e01eb` on 10 November; `solar-orbit.svg`.                                      |
 | https://www.fffuel.co/cccircular/         | Actual generated composition inspected; not selected for this revision.                                                                                |
 | https://www.fffuel.co/oooscillate/        | Actual generated wave composition inspected; not selected for this revision.                                                                           |
 | https://www.fffuel.co/ssspiral/           | Published SVG geometry inspected, extracted, and recoloured as `organic-spiral.svg`. Original point placement retained.                                |
@@ -19,13 +19,13 @@ fffuel licence: https://www.fffuel.co/license/
 
 The licence permits personal and commercial project use without required attribution, and restricts sublicensing, resale, and redistribution of the images. These assets are supplied as integrated project artwork, not as a standalone graphic collection. Do not extract or repackage them for resale or separate distribution. An acknowledgement is included in the public footer's credits dialog.
 
-| Local graphic                          | Intended treatment                                                                                               |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `assets/graphics/solar-orbit.svg`      | Home 1 hero and Classes banner; static source-generated warm spiral; short hero entrance respects reduced motion |
-| `assets/graphics/organic-spiral.svg`   | Static Home 2 hero accent, class/practice accents, static page introductions                                     |
-| `assets/graphics/organic-ripples.svg`  | Static class-discovery accent and cropped Home 2 workshop editorial panel                                        |
-| `assets/graphics/meditative-rings.svg` | Static Home 1 meditation section                                                                                 |
-| `assets/graphics/logo.svg`             | Original simple solar-ray brand mark and favicon; geometric logo, not stock psychedelic artwork                  |
+| Local graphic                          | Intended treatment                                                                                                                      |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `assets/graphics/solar-orbit.svg`      | Home 1 hero only; restored static concentric spiral, 500px desktop with responsive sizing; short photo entrance respects reduced motion |
+| `assets/graphics/organic-spiral.svg`   | Static Home 2 hero accent and restored Classes banner, up to 420px; original dotted spiral retained                                     |
+| `assets/graphics/organic-ripples.svg`  | Static class-discovery accent and cropped Home 2 workshop editorial panel                                                               |
+| `assets/graphics/meditative-rings.svg` | Static Home 1 meditation section                                                                                                        |
+| `assets/graphics/logo.svg`             | Original simple solar-ray brand mark and favicon; geometric logo, not stock psychedelic artwork                                         |
 
 All four decorative SVGs were visually inspected and have transparent backgrounds. No bespoke psychedelic paths or random CSS-generated blobs were introduced.
 
@@ -78,7 +78,9 @@ Downloaded widths: 1400–1600px. Original photographs are retained without stre
 
 Sola Studio is a working brand; no trademark clearance is claimed. Sample instructor names, teaching approaches, workshop concepts, and membership terms are explicitly illustrative. Photography is not evidence of an operating studio, instructor identity, or verified professional qualification.
 
-## Targeted redesign — source details
+## Historical targeted redesign — source details
+
+The following records the 9 November revision. On 10 November, at the client’s request, the cccoil export was replaced with the original `43e01eb` hero SVG; Classes returned to `organic-spiral.svg`. No cccoil artwork remains in runtime assets. Instructor photographs and social marks below remain current.
 
 The actual cccoil generator was explored alongside cccircular and oooscillate. Selected export: transparent background, 32 lines, gradient `#F3C46C` → `#A65F40`, round caps, width 22, spacing 12, step values 2/2, scale .85, rotation 0. Existing generator geometry is retained. One zero-length outer mark was omitted to avoid an isolated dot; no hand-authored psychedelic geometry was added. The SVG keeps its aspect ratio and uses no continuous animation.
 
@@ -94,3 +96,7 @@ Social button marks:
 - `google.png`: official [Google G asset](https://developers.google.com/identity/images/g-logo.png), used at original aspect ratio under [Google sign-in branding guidance](https://developers.google.com/identity/branding-guidelines).
 - `apple.svg`: Apple silhouette from [Simple Icons](https://github.com/simple-icons/simple-icons/blob/develop/icons/apple.svg), distributed under the project's CC0 license; Apple trademarks remain Apple's. Consult [Apple sign-in guidance](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple) before connecting OAuth.
 - These buttons show unconnected feedback; neither provider is implemented or claimed certified.
+
+## Precision correction — 10 November 2026
+
+`solar-orbit.svg` exactly matches the initial commit’s Git blob `89c0963954501d8850d8ae542de2e75deeb9987b`. The existing `organic-spiral.svg` is unchanged and used for the Classes banner as well as Home 2. Both are static, aspect-ratio-preserving artwork. No photographs or fonts were changed. Dropdown chevrons are small interface icons embedded in CSS, not decorative artwork.

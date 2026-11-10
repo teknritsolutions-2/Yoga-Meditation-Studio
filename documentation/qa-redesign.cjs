@@ -132,11 +132,10 @@ const fs = require("node:fs");
         .count(),
       0,
     );
+    assert.equal(await p.locator('a[href="dashboard.html"]').count(), 0);
     assert.equal(
-      await p
-        .locator('a[href="../index.html"],a[href="dashboard.html"]')
-        .count(),
-      0,
+      await p.locator('.auth-brand[href="../index.html"]').count(),
+      1,
     );
     assert.equal(await p.locator("[data-provider] img").count(), 2);
     assert(

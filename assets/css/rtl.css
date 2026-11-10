@@ -31,3 +31,7 @@
   direction: ltr;
   text-align: right;
 }
+
+[dir="rtl"] select {
+  background-position: left 16px center;
+}

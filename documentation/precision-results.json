@@ -1,0 +1,1387 @@
+{
+  "date": "2026-11-10",
+  "precision": {
+    "checks": [
+      "Shared navbar/content/footer guides and persistent Login: index.html 320 ltr",
+      "Shared navbar/content/footer guides and persistent Login: index.html 320 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/home2.html 320 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/home2.html 320 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/classes.html 320 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/classes.html 320 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/instructors.html 320 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/instructors.html 320 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/memberships.html 320 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/memberships.html 320 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/contact.html 320 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/contact.html 320 rtl",
+      "Shared navbar/content/footer guides and persistent Login: index.html 390 ltr",
+      "Shared navbar/content/footer guides and persistent Login: index.html 390 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/home2.html 390 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/home2.html 390 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/classes.html 390 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/classes.html 390 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/instructors.html 390 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/instructors.html 390 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/memberships.html 390 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/memberships.html 390 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/contact.html 390 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/contact.html 390 rtl",
+      "Shared navbar/content/footer guides and persistent Login: index.html 768 ltr",
+      "Shared navbar/content/footer guides and persistent Login: index.html 768 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/home2.html 768 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/home2.html 768 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/classes.html 768 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/classes.html 768 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/instructors.html 768 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/instructors.html 768 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/memberships.html 768 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/memberships.html 768 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/contact.html 768 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/contact.html 768 rtl",
+      "Shared navbar/content/footer guides and persistent Login: index.html 1024 ltr",
+      "Shared navbar/content/footer guides and persistent Login: index.html 1024 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/home2.html 1024 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/home2.html 1024 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/classes.html 1024 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/classes.html 1024 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/instructors.html 1024 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/instructors.html 1024 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/memberships.html 1024 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/memberships.html 1024 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/contact.html 1024 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/contact.html 1024 rtl",
+      "Shared navbar/content/footer guides and persistent Login: index.html 1280 ltr",
+      "Shared navbar/content/footer guides and persistent Login: index.html 1280 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/home2.html 1280 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/home2.html 1280 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/classes.html 1280 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/classes.html 1280 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/instructors.html 1280 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/instructors.html 1280 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/memberships.html 1280 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/memberships.html 1280 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/contact.html 1280 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/contact.html 1280 rtl",
+      "Shared navbar/content/footer guides and persistent Login: index.html 1440 ltr",
+      "Shared navbar/content/footer guides and persistent Login: index.html 1440 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/home2.html 1440 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/home2.html 1440 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/classes.html 1440 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/classes.html 1440 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/instructors.html 1440 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/instructors.html 1440 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/memberships.html 1440 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/memberships.html 1440 rtl",
+      "Shared navbar/content/footer guides and persistent Login: pages/contact.html 1440 ltr",
+      "Shared navbar/content/footer guides and persistent Login: pages/contact.html 1440 rtl",
+      "Native select keyboard changes work with custom chevrons",
+      "Sticky header and floating back-to-top preserved",
+      "login brand navigates home by keyboard",
+      "signup brand navigates home by keyboard"
+    ],
+    "sizes": [
+      {
+        "name": "hero",
+        "width": 320,
+        "mode": "light",
+        "dir": "ltr",
+        "artWidth": 285
+      },
+      {
+        "name": "hero",
+        "width": 320,
+        "mode": "dark",
+        "dir": "ltr",
+        "artWidth": 285
+      },
+      {
+        "name": "banner",
+        "width": 320,
+        "mode": "light",
+        "dir": "ltr",
+        "artWidth": 280
+      },
+      {
+        "name": "banner",
+        "width": 320,
+        "mode": "dark",
+        "dir": "ltr",
+        "artWidth": 280
+      },
+      {
+        "name": "hero",
+        "width": 390,
+        "mode": "light",
+        "dir": "ltr",
+        "artWidth": 340
+      },
+      {
+        "name": "hero",
+        "width": 390,
+        "mode": "dark",
+        "dir": "ltr",
+        "artWidth": 340
+      },
+      {
+        "name": "hero",
+        "width": 390,
+        "mode": "dark",
+        "dir": "rtl",
+        "artWidth": 340
+      },
+      {
+        "name": "banner",
+        "width": 390,
+        "mode": "light",
+        "dir": "ltr",
+        "artWidth": 280
+      },
+      {
+        "name": "banner",
+        "width": 390,
+        "mode": "dark",
+        "dir": "ltr",
+        "artWidth": 280
+      },
+      {
+        "name": "banner",
+        "width": 390,
+        "mode": "dark",
+        "dir": "rtl",
+        "artWidth": 280
+      },
+      {
+        "name": "hero",
+        "width": 768,
+        "mode": "light",
+        "dir": "ltr",
+        "artWidth": 350
+      },
+      {
+        "name": "hero",
+        "width": 768,
+        "mode": "dark",
+        "dir": "ltr",
+        "artWidth": 350
+      },
+      {
+        "name": "banner",
+        "width": 768,
+        "mode": "light",
+        "dir": "ltr",
+        "artWidth": 278.8125
+      },
+      {
+        "name": "banner",
+        "width": 768,
+        "mode": "dark",
+        "dir": "ltr",
+        "artWidth": 278.8125
+      },
+      {
+        "name": "hero",
+        "width": 1024,
+        "mode": "light",
+        "dir": "ltr",
+        "artWidth": 430
+      },
+      {
+        "name": "hero",
+        "width": 1024,
+        "mode": "dark",
+        "dir": "ltr",
+        "artWidth": 430
+      },
+      {
+        "name": "hero",
+        "width": 1024,
+        "mode": "dark",
+        "dir": "rtl",
+        "artWidth": 430
+      },
+      {
+        "name": "banner",
+        "width": 1024,
+        "mode": "light",
+        "dir": "ltr",
+        "artWidth": 387.59375
+      },
+      {
+        "name": "banner",
+        "width": 1024,
+        "mode": "dark",
+        "dir": "ltr",
+        "artWidth": 387.59375
+      },
+      {
+        "name": "banner",
+        "width": 1024,
+        "mode": "dark",
+        "dir": "rtl",
+        "artWidth": 387.59375
+      },
+      {
+        "name": "hero",
+        "width": 1280,
+        "mode": "light",
+        "dir": "ltr",
+        "artWidth": 500
+      },
+      {
+        "name": "hero",
+        "width": 1280,
+        "mode": "dark",
+        "dir": "ltr",
+        "artWidth": 500
+      },
+      {
+        "name": "banner",
+        "width": 1280,
+        "mode": "light",
+        "dir": "ltr",
+        "artWidth": 420
+      },
+      {
+        "name": "banner",
+        "width": 1280,
+        "mode": "dark",
+        "dir": "ltr",
+        "artWidth": 420
+      },
+      {
+        "name": "hero",
+        "width": 1440,
+        "mode": "light",
+        "dir": "ltr",
+        "artWidth": 500
+      },
+      {
+        "name": "hero",
+        "width": 1440,
+        "mode": "dark",
+        "dir": "ltr",
+        "artWidth": 500
+      },
+      {
+        "name": "banner",
+        "width": 1440,
+        "mode": "light",
+        "dir": "ltr",
+        "artWidth": 420
+      },
+      {
+        "name": "banner",
+        "width": 1440,
+        "mode": "dark",
+        "dir": "ltr",
+        "artWidth": 420
+      }
+    ],
+    "errors": []
+  },
+  "matrix": {
+    "checks": [
+      {
+        "name": "home",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home2",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "classes",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "instructors",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "memberships",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "contact",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "login",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "signup",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "signup",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "signup",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "signup",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "signup",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "signup",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "signup",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "signup",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "signup",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "signup",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "signup",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "signup",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 320,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 320,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 390,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 390,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 768,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 768,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 1024,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 1024,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 1280,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 1280,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 1440,
+        "mode": "light",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "dashboard",
+        "width": 1440,
+        "mode": "dark",
+        "overflow": false,
+        "broken": [],
+        "small": []
+      },
+      {
+        "name": "home",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "home",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "home2",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "home2",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "classes",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "classes",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "instructors",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "instructors",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "memberships",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "memberships",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "contact",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "contact",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "login",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "login",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "signup",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "signup",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "dashboard",
+        "width": 390,
+        "mode": "dark-rtl",
+        "overflow": false
+      },
+      {
+        "name": "dashboard",
+        "width": 1024,
+        "mode": "dark-rtl",
+        "overflow": false
+      }
+    ],
+    "errors": [],
+    "failures": []
+  },
+  "regression": {
+    "checks": [
+      "index.html @ 320",
+      "index.html @ 390",
+      "index.html @ 768",
+      "index.html @ 1024",
+      "index.html @ 1280",
+      "index.html @ 1440",
+      "index.html dark RTL @ 390",
+      "index.html dark RTL @ 1280",
+      "pages/home2.html @ 320",
+      "pages/home2.html @ 390",
+      "pages/home2.html @ 768",
+      "pages/home2.html @ 1024",
+      "pages/home2.html @ 1280",
+      "pages/home2.html @ 1440",
+      "pages/home2.html dark RTL @ 390",
+      "pages/home2.html dark RTL @ 1280",
+      "pages/classes.html @ 320",
+      "pages/classes.html @ 390",
+      "pages/classes.html @ 768",
+      "pages/classes.html @ 1024",
+      "pages/classes.html @ 1280",
+      "pages/classes.html @ 1440",
+      "pages/classes.html dark RTL @ 390",
+      "pages/classes.html dark RTL @ 1280",
+      "pages/instructors.html @ 320",
+      "pages/instructors.html @ 390",
+      "pages/instructors.html @ 768",
+      "pages/instructors.html @ 1024",
+      "pages/instructors.html @ 1280",
+      "pages/instructors.html @ 1440",
+      "pages/instructors.html dark RTL @ 390",
+      "pages/instructors.html dark RTL @ 1280",
+      "pages/memberships.html @ 320",
+      "pages/memberships.html @ 390",
+      "pages/memberships.html @ 768",
+      "pages/memberships.html @ 1024",
+      "pages/memberships.html @ 1280",
+      "pages/memberships.html @ 1440",
+      "pages/memberships.html dark RTL @ 390",
+      "pages/memberships.html dark RTL @ 1280",
+      "pages/contact.html @ 320",
+      "pages/contact.html @ 390",
+      "pages/contact.html @ 768",
+      "pages/contact.html @ 1024",
+      "pages/contact.html @ 1280",
+      "pages/contact.html @ 1440",
+      "pages/contact.html dark RTL @ 390",
+      "pages/contact.html dark RTL @ 1280",
+      "pages/login.html @ 320",
+      "pages/login.html @ 390",
+      "pages/login.html @ 768",
+      "pages/login.html @ 1024",
+      "pages/login.html @ 1280",
+      "pages/login.html @ 1440",
+      "pages/login.html dark RTL @ 390",
+      "pages/login.html dark RTL @ 1280",
+      "pages/signup.html @ 320",
+      "pages/signup.html @ 390",
+      "pages/signup.html @ 768",
+      "pages/signup.html @ 1024",
+      "pages/signup.html @ 1280",
+      "pages/signup.html @ 1440",
+      "pages/signup.html dark RTL @ 390",
+      "pages/signup.html dark RTL @ 1280",
+      "pages/dashboard.html @ 320",
+      "pages/dashboard.html @ 390",
+      "pages/dashboard.html @ 768",
+      "pages/dashboard.html @ 1024",
+      "pages/dashboard.html @ 1280",
+      "pages/dashboard.html @ 1440",
+      "pages/dashboard.html dark RTL @ 390",
+      "pages/dashboard.html dark RTL @ 1280",
+      "Initial ten-pack balance 6",
+      "Book: credits 6\u21925",
+      "Duplicate prevented, balance unchanged",
+      "Cancel restores one credit, repeated cancellation prevented",
+      "State persists across refresh",
+      "Renewal preview saves request without applying plan/payment",
+      "Unlimited bookings do not fabricate a credit count",
+      "Reset restores consistent sample state and validity/history dates",
+      "Style/level filters and reset",
+      "Practice finder matches goal and duration",
+      "Plan comparison derives visits from sample data",
+      "Enquiry preview validates and does not claim sending",
+      "Guest booking opens directly accessible dashboard with selected session",
+      "Dashboard drawer opens/closes with Escape",
+      "Mobile navigation and persistent theme/RTL",
+      "Reduced motion stops decorative animation"
+    ],
+    "errors": [],
+    "failures": []
+  },
+  "targetedRegression": {
+    "checks": [
+      "Seven consecutive Monday\u2013Sunday dates each expose the matching four catalog sessions",
+      "Keyboard/RTL day selection and View/Book preserve the selected session through direct dashboard access",
+      "All four comparison plans retain correct capped/unlimited math at frequencies 1, 3, and 7",
+      "Separate auth pages: native validation, confirmation matching, password visibility, 320px options row, actual provider logos, accurate unconnected feedback, no credential transmission/storage",
+      "Direct dashboard remains accessible with its own navigation and unchanged six-credit balance",
+      "Removed motion/practice widgets, logical footer groups, and reduced-motion entrance behavior"
+    ],
+    "errors": []
+  },
+  "edges": {
+    "checks": [
+      "Expired membership blocks booking",
+      "Exhausted single-session credit blocks booking",
+      "15-day rollover preserves booking history and credit accounting",
+      "All nine pages work under a GitHub Pages-style /studio/ subpath",
+      "Home dropdown and keyboard-operated practice tabs",
+      "Static artwork, floating back-to-top, and sticky header"
+    ],
+    "errors": []
+  },
+  "static": {
+    "references": 166,
+    "missing": [],
+    "productionJavaScriptSyntax": "9 files passed node --check",
+    "restoredHeroBlob": "89c0963954501d8850d8ae542de2e75deeb9987b"
+  },
+  "darkBannerFollowup": {
+    "configurations": 8,
+    "overflow": false,
+    "filter": "brightness(1.4)"
+  }
+}

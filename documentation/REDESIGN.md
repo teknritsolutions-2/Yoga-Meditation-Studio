@@ -1,5 +1,7 @@
 # Targeted redesign — 9 November 2026
 
+Historical revision: [PRECISION.md](PRECISION.md) records the subsequent client-requested restoration of the original spirals, shared container alignment, permanent Login navigation, instructor alignment, select chevrons, and clickable auth branding.
+
 Preserves the buildless HTML/CSS/vanilla JavaScript architecture, warm palette, local fonts, successful public sections, and credit ledger. Adds one physical page: `pages/signup.html`.
 
 ## Delivered components
