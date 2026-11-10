@@ -1,26 +1,46 @@
 :root[data-theme="dark"] {
-  --bg: #211c19;
-  --surface: #322821;
-  --paper: #2a231e;
-  --ink: #f9ecd9;
-  --muted: #c0ae9c;
+  --bg: #080808;
+  --surface: #1b1b1b;
+  --paper: #121212;
+  --ink: #f4f4f4;
+  --muted: #b8b8b8;
   --clay: #e8ac7c;
-  --line: #514338;
-  --shadow: 0 12px 38px #0002;
+  --line: #363636;
+  --shadow: 0 12px 38px #0007;
   color-scheme: dark;
 }
 [data-theme="dark"] .brand img {
   filter: brightness(1.55);
 }
+[data-theme="dark"] .plan.featured {
+  background: var(--surface);
+  border-color: var(--clay);
+  color: var(--ink);
+}
+[data-theme="dark"] .plan.featured p,
+[data-theme="dark"] .plan.featured small,
+[data-theme="dark"] .plan.featured .price span {
+  color: var(--muted);
+}
+[data-theme="dark"] .plan.featured .eyebrow,
+[data-theme="dark"] .plan.featured li svg {
+  color: var(--clay);
+}
 [data-theme="dark"] .plan.featured .btn {
-  background: #34271f;
-  color: #fcf7ee;
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
 }
 [data-theme="dark"] .plan.featured .plan-tag {
-  color: #fcf7ee;
+  background: var(--clay);
+  color: var(--bg);
 }
-[data-theme="dark"] .plan.featured li svg {
-  color: #75402a;
+[data-theme="dark"] .site-header[data-menu-open] .nav-backdrop,
+[data-theme="dark"] .dashboard-shell.drawer-open .drawer-backdrop {
+  background: #0008;
+}
+[data-theme="dark"] dialog::backdrop {
+  background: #000a;
 }
 [data-theme="dark"] .slow-panel .btn {
   background: #34271f;
@@ -42,7 +62,7 @@
 }
 
 [data-theme="dark"] select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23D5C5B3' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23B8B8B8' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
 }
 [data-theme="dark"] .class-banner-art {
   filter: brightness(1.4);

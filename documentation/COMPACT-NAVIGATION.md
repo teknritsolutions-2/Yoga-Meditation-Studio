@@ -28,3 +28,9 @@ SOLA_PLAYWRIGHT=/absolute/path/to/playwright SOLA_AUDIT_ENGINE=webkit node docum
 ```
 
 `SOLA_SCREEN_BASE` and `SOLA_QA_OUTPUT` select another preview origin and capture directory.
+
+## Neutral dark palette follow-up
+
+The client's subsequent request replaces the brown dark-mode surfaces with **#080808** page backgrounds, **#121212** cards and fields, and **#1b1b1b** secondary panels. Text and borders now use neutral whites/grays. The large featured plan is charcoal with a warm border and badge. Warm artwork/accent colors remain; light-mode variables are unchanged. Dialog and navigation backdrops are neutral black.
+
+The palette was visually reviewed on both home pages, pricing, open Classes options, login/sign-up, dashboard and compact menus at 390/820px. The all-page/four-mode geometry scan passes **420 Chromium configurations** at 320/390/768/820/1024/1180/1440px. Supporting gray text has an **8.68:1** contrast ratio against the lighter charcoal panel; primary text against the black page is **18.21:1**. These ratios describe those token pairs, not a claim of a complete accessibility certification.
