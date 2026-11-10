@@ -19,13 +19,13 @@ fffuel licence: https://www.fffuel.co/license/
 
 The licence permits personal and commercial project use without required attribution, and restricts sublicensing, resale, and redistribution of the images. These assets are supplied as integrated project artwork, not as a standalone graphic collection. Do not extract or repackage them for resale or separate distribution. An acknowledgement is included in the public footer's credits dialog.
 
-| Local graphic                          | Intended treatment                                                                                              |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `assets/graphics/hero-waves.svg`       | Home 1 hero; transparent soft flowing wave lines from the actual oooscillate generator; static 3:1 aspect ratio |
-| `assets/graphics/organic-spiral.svg`   | Static Home 2 hero accent and restored Classes banner, up to 420px; original dotted spiral retained             |
-| `assets/graphics/organic-ripples.svg`  | Static class-discovery accent and cropped Home 2 workshop editorial panel                                       |
-| `assets/graphics/meditative-rings.svg` | Static Home 1 meditation section                                                                                |
-| `assets/graphics/logo.svg`             | Original simple solar-ray brand mark and favicon; geometric logo, not stock psychedelic artwork                 |
+| Local graphic                          | Intended treatment                                                                                                     |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `assets/graphics/hero-waves.svg`       | Home 1 hero; transparent soft flowing wave lines from the actual oooscillate generator; static 3:1 aspect ratio        |
+| `assets/graphics/organic-spiral.svg`   | Static Home 2 hero accent, Classes banner, and decorative Login/Sign Up backgrounds; original dotted geometry retained |
+| `assets/graphics/organic-ripples.svg`  | Static class-discovery accent and cropped Home 2 workshop editorial panel                                              |
+| `assets/graphics/meditative-rings.svg` | Static Home 1 meditation section                                                                                       |
+| `assets/graphics/logo.svg`             | Original simple solar-ray brand mark and favicon; geometric logo, not stock psychedelic artwork                        |
 
 All four decorative SVGs were visually inspected and have transparent backgrounds. No bespoke psychedelic paths or random CSS-generated blobs were introduced.
 

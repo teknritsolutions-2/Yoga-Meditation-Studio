@@ -1,6 +1,34 @@
 .auth-page {
   min-height: 100svh;
   background: var(--bg);
+  position: relative;
+  isolation: isolate;
+}
+/* Static decorative spirals stay behind the opaque form surface. */
+.auth-page::before,
+.auth-page::after {
+  content: "";
+  position: fixed;
+  width: 640px;
+  aspect-ratio: 1;
+  background: url("../graphics/organic-spiral.svg") center / contain no-repeat;
+  opacity: 0.62;
+  pointer-events: none;
+  z-index: -1;
+}
+.auth-page::before {
+  inset-inline-start: calc(50% - 850px);
+  inset-block-start: -110px;
+}
+.auth-page::after {
+  inset-inline-end: calc(50% - 850px);
+  inset-block-end: -120px;
+  transform: rotate(70deg);
+}
+[data-theme="dark"] .auth-page::before,
+[data-theme="dark"] .auth-page::after {
+  filter: brightness(1.6);
+  opacity: 0.55;
 }
 .auth-shell {
   min-height: 100svh;
@@ -156,6 +184,19 @@
   margin: 0;
 }
 @media (max-width: 480px) {
+  .auth-page::before,
+  .auth-page::after {
+    width: 440px;
+  }
+  .auth-page::before {
+    inset-inline-start: -230px;
+    inset-block-start: -130px;
+  }
+  .auth-page::after {
+    inset-inline-end: -240px;
+    inset-block-end: -90px;
+  }
+
   .auth-shell {
     padding: 78px 18px 24px;
     place-items: start center;
