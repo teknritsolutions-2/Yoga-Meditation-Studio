@@ -69,7 +69,7 @@ const fs = require("node:fs");
         );
         assert.equal(
           (await page.locator(".nav-login").innerText()).trim(),
-          "Member Login",
+          "Login",
         );
         assert(
           (await page.locator(".nav-login").getAttribute("href")).endsWith(
