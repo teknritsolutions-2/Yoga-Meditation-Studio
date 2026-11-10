@@ -109,7 +109,7 @@ fs.mkdirSync(OUT, { recursive: true });
   assert.equal(await p.locator(".motion-toggle").count(), 0);
   assert.equal(
     await p
-      .locator(".solar-orbit")
+      .locator(".hero-waves")
       .evaluate((e) => getComputedStyle(e).animationName),
     "none",
   );

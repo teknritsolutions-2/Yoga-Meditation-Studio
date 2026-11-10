@@ -26,9 +26,9 @@ Renewal requests are separate state records. They never alter a plan, expiry, or
 
 Cream/ivory canvas, cocoa typography, clay accents, and saffron decorative sections. Locally served Fraunces and Manrope. Rounded photographs, asymmetrical editorial groupings, a tabbed practice selector, horizontal session rows, and a clean member workspace supply different layout rhythms.
 
-Four principal art treatments use four sourced fffuel SVG assets: the restored static warm concentric hero spiral; the static dotted organic spiral beside the second homepage hero and in the Classes banner; reflective meditation rings; and sourced organic-ripple contours in the workshop editorial panel. The original generator geometry is preserved rather than introducing arbitrary hand-drawn paths.
+Four principal art treatments use four sourced fffuel SVG assets: the static soft flowing hero waves from oooscillate; the static dotted organic spiral beside the second homepage hero and in the Classes banner; reflective meditation rings; and sourced organic-ripple contours in the workshop editorial panel. The original generator geometry is preserved rather than introducing arbitrary hand-drawn paths.
 
-Artwork is static. The hero photograph has a short .65-second entrance suppressed by `prefers-reduced-motion`; playback controls and their handlers were removed. Decorative SVGs have transparent backgrounds; no checkerboard or white matte is embedded. Photographs are never mirrored in RTL.
+Artwork is static. Home 1 uses a headline-and-wave row above a landscape photograph and introduction/action panel. Its previous arch, overlapping caption, concentric motif and entrance styles are removed. Playback controls are absent. Decorative SVGs have transparent backgrounds; no checkerboard or white matte is embedded. Photographs are never mirrored in RTL.
 
 ## Accessibility and responsive behaviour
 

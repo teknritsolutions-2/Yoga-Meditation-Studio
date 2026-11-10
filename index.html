@@ -33,11 +33,35 @@
     <a class="skip" href="#main">Skip to content</a>
     <header class="site-header" id="site-header"></header>
     <main id="main">
-      <section class="hero">
-        <div class="wrap hero-grid">
-          <div class="hero-copy">
+      <section class="wrap home-hero" aria-labelledby="home-hero-title">
+        <div class="hero-heading">
+          <div>
             <span class="eyebrow">A space to move. A moment to be.</span>
-            <h1>A little movement.<br />A lot more <em>you.</em></h1>
+            <h1 id="home-hero-title">
+              A little movement.<br />A lot more <em>you.</em>
+            </h1>
+          </div>
+          <img
+            class="hero-waves"
+            src="./assets/graphics/hero-waves.svg"
+            alt=""
+            aria-hidden="true"
+            width="2400"
+            height="800"
+          />
+        </div>
+        <div class="hero-stage">
+          <img
+            class="home-hero-photo"
+            src="./assets/images/flow.jpg"
+            alt="Yoga practitioner stretching in a naturally lit studio"
+            width="1400"
+            height="933"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+          <div class="hero-story">
             <p>
               Yoga, meditation, and moments of stillness to help you reconnect
               with your everyday rhythm.
@@ -69,32 +93,9 @@
                   <path d="M5 12h14m-6-6 6 6-6 6" /></svg
               ></a>
             </div>
-            <div class="hero-footnote">
-              <span aria-hidden="true">✧</span> Every body welcome. Every
-              beginning, celebrated.
-            </div>
-          </div>
-          <div class="hero-visual">
-            <img
-              class="solar-orbit"
-              src="./assets/graphics/solar-orbit.svg"
-              alt=""
-              aria-hidden="true"
-            /><img
-              class="hero-photo"
-              src="./assets/images/flow.jpg"
-              alt="Yoga practitioner stretching in a naturally lit studio"
-              loading="eager"
-              decoding="async"
-            />
-            <div class="photo-note">
-              <span aria-hidden="true">✳</span>
-              <div>
-                <strong>Find a little room for yourself.</strong><br /><span
-                  >ON THE MAT. AND EVERYWHERE ELSE.</span
-                >
-              </div>
-            </div>
+            <p class="hero-welcome">
+              Every body welcome.<br />Every beginning, celebrated.
+            </p>
           </div>
         </div>
       </section>

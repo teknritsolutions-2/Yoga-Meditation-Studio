@@ -1,14 +1,14 @@
 # Asset sources, licensing, and usage manifest
 
-Reviewed 9 November 2026. Assets are stored locally and used within this website. No runtime image hotlinks or image-search previews are used. Stock photographs illustrate the concept and sample profiles; they do not imply affiliation, certification, or endorsement.
+Reviewed 9–10 November 2026. Assets are stored locally and used within this website. No runtime image hotlinks or image-search previews are used. Stock photographs illustrate the concept and sample profiles; they do not imply affiliation, certification, or endorsement.
 
 ## Graphic sources researched
 
 | Source                                    | Result                                                                                                                                                 |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| https://www.fffuel.co/vvvortex/           | Original warm concentric geometry restored byte-for-byte from commit `43e01eb` on 10 November; `solar-orbit.svg`.                                      |
+| https://www.fffuel.co/vvvortex/           | Historical concentric geometry restored from `43e01eb`, then removed from runtime when the client selected flowing waves.                              |
 | https://www.fffuel.co/cccircular/         | Actual generated composition inspected; not selected for this revision.                                                                                |
-| https://www.fffuel.co/oooscillate/        | Actual generated wave composition inspected; not selected for this revision.                                                                           |
+| https://www.fffuel.co/oooscillate/        | Actual generated wave composition exported and used as `hero-waves.svg` for the Home 1 layout revision.                                                |
 | https://www.fffuel.co/ssspiral/           | Published SVG geometry inspected, extracted, and recoloured as `organic-spiral.svg`. Original point placement retained.                                |
 | https://www.fffuel.co/rrreflection/       | Actual generator opened in a browser; generated SVG exported and inspected. Recoloured warm as `meditative-rings.svg`.                                 |
 | https://www.fffuel.co/uuundulate/         | Actual organic-ripple generator exported in a browser, visually inspected, and recoloured with clay/cocoa strokes. Original generated paths preserved. |
@@ -19,13 +19,13 @@ fffuel licence: https://www.fffuel.co/license/
 
 The licence permits personal and commercial project use without required attribution, and restricts sublicensing, resale, and redistribution of the images. These assets are supplied as integrated project artwork, not as a standalone graphic collection. Do not extract or repackage them for resale or separate distribution. An acknowledgement is included in the public footer's credits dialog.
 
-| Local graphic                          | Intended treatment                                                                                                                      |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| `assets/graphics/solar-orbit.svg`      | Home 1 hero only; restored static concentric spiral, 500px desktop with responsive sizing; short photo entrance respects reduced motion |
-| `assets/graphics/organic-spiral.svg`   | Static Home 2 hero accent and restored Classes banner, up to 420px; original dotted spiral retained                                     |
-| `assets/graphics/organic-ripples.svg`  | Static class-discovery accent and cropped Home 2 workshop editorial panel                                                               |
-| `assets/graphics/meditative-rings.svg` | Static Home 1 meditation section                                                                                                        |
-| `assets/graphics/logo.svg`             | Original simple solar-ray brand mark and favicon; geometric logo, not stock psychedelic artwork                                         |
+| Local graphic                          | Intended treatment                                                                                              |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `assets/graphics/hero-waves.svg`       | Home 1 hero; transparent soft flowing wave lines from the actual oooscillate generator; static 3:1 aspect ratio |
+| `assets/graphics/organic-spiral.svg`   | Static Home 2 hero accent and restored Classes banner, up to 420px; original dotted spiral retained             |
+| `assets/graphics/organic-ripples.svg`  | Static class-discovery accent and cropped Home 2 workshop editorial panel                                       |
+| `assets/graphics/meditative-rings.svg` | Static Home 1 meditation section                                                                                |
+| `assets/graphics/logo.svg`             | Original simple solar-ray brand mark and favicon; geometric logo, not stock psychedelic artwork                 |
 
 All four decorative SVGs were visually inspected and have transparent backgrounds. No bespoke psychedelic paths or random CSS-generated blobs were introduced.
 
@@ -97,6 +97,12 @@ Social button marks:
 - `apple.svg`: Apple silhouette from [Simple Icons](https://github.com/simple-icons/simple-icons/blob/develop/icons/apple.svg), distributed under the project's CC0 license; Apple trademarks remain Apple's. Consult [Apple sign-in guidance](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple) before connecting OAuth.
 - These buttons show unconnected feedback; neither provider is implemented or claimed certified.
 
-## Precision correction — 10 November 2026
+## Historical precision correction — 10 November 2026
 
 `solar-orbit.svg` exactly matches the initial commit’s Git blob `89c0963954501d8850d8ae542de2e75deeb9987b`. The existing `organic-spiral.svg` is unchanged and used for the Classes banner as well as Home 2. Both are static, aspect-ratio-preserving artwork. No photographs or fonts were changed. Dropdown chevrons are small interface icons embedded in CSS, not decorative artwork.
+
+## Home 1 flowing waves — 10 November 2026
+
+The client selected soft flowing waves and requested a different hero layout. The original concentric SVG has now been removed from runtime assets; its source remains in Git history. `hero-waves.svg` was exported directly from [fffuel oooscillate](https://www.fffuel.co/oooscillate/) in the browser. Settings: 18:6 (2400×800), transparent fill, frequency 13, gradient saffron `#F3C46C` → clay `#A65F40`, fading opacity, round caps, spacing 35, stroke width 3, amplitude 45, no dashes. Source-generated paths and viewBox are preserved. No hand-authored psychedelic geometry was added. The existing fffuel commercial-project license applies; this is integrated website artwork.
+
+The hero still uses the existing `flow.jpg` photograph. No other imagery, fonts or public-page compositions changed in this revision.

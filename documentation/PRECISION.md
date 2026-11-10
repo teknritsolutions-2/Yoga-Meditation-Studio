@@ -1,5 +1,7 @@
 # Precise visual and navigation fixes — 10 November 2026
 
+Historical snapshot: [HOME-HERO.md](HOME-HERO.md) records the subsequent client-approved Home 1 layout change and replacement of concentric rings with soft flowing waves. The navbar, instructor, select and authentication corrections below remain current.
+
 This revision preserves the existing layouts, typography, palette, photography, weekly explorer and member ledger. It makes the seven requested corrections in the existing buildless HTML/CSS/JavaScript project.
 
 1. **Restored spirals.** `solar-orbit.svg` is restored byte-for-byte from the original `43e01eb` commit, Git blob `89c0963954501d8850d8ae542de2e75deeb9987b`. Classes uses the unchanged `organic-spiral.svg` dotted design. The thick cccoil design is removed from runtime artwork. Both restored graphics keep their native proportions, sit behind/beside content, and have no continuous animation or playback control. A small brightness adjustment makes the dotted Classes artwork clearer in dark mode without changing its source geometry.

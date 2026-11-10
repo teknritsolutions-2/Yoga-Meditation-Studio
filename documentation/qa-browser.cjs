@@ -270,7 +270,7 @@ const ROOT = "http://127.0.0.1:4173";
   await p.reload();
   assert.equal(
     await p
-      .locator(".solar-orbit")
+      .locator(".hero-waves")
       .evaluate((e) => getComputedStyle(e).animationName),
     "none",
   );

@@ -12,9 +12,6 @@
 [data-theme="dark"] .brand img {
   filter: brightness(1.55);
 }
-[data-theme="dark"] .solar-orbit {
-  opacity: 0.75;
-}
 [data-theme="dark"] .plan.featured .btn {
   background: #34271f;
   color: #fcf7ee;
@@ -30,8 +27,7 @@
   color: #fcf7ee;
   border-color: #34271f;
 }
-[data-theme="dark"] .guide-portrait,
-[data-theme="dark"] .hero-photo {
+[data-theme="dark"] .guide-portrait {
   filter: brightness(0.88);
 }
 [data-theme="dark"] .danger {

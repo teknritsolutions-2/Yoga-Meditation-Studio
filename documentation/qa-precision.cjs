@@ -153,12 +153,12 @@ const fs = require("node:fs");
         if (name === "hero") {
           assert.equal(await page.locator(".motion-toggle").count(), 0);
           const w = await page
-            .locator(".solar-orbit")
+            .locator(".hero-waves")
             .evaluate((e) => e.getBoundingClientRect().width);
           sizes.push({ name, width, mode, dir, artWidth: w });
           assert.equal(
             await page
-              .locator(".solar-orbit")
+              .locator(".hero-waves")
               .evaluate((e) => getComputedStyle(e).animationName),
             "none",
           );

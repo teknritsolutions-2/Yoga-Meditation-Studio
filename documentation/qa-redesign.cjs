@@ -229,7 +229,7 @@ const fs = require("node:fs");
   await p.emulateMedia({ reducedMotion: "reduce" });
   assert.equal(
     await p
-      .locator(".hero-visual")
+      .locator(".hero-stage")
       .evaluate((e) => getComputedStyle(e).animationName),
     "none",
   );

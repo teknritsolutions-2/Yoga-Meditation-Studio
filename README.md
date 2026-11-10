@@ -68,4 +68,4 @@ URLs and local font/image paths work under a repository subpath as well as a dom
 
 ## Verification and asset records
 
-See `documentation/PRECISION.md` for the latest visual/navigation corrections and verification. The preceding targeted redesign is recorded in `documentation/REDESIGN.md`. Earlier records are in `documentation/REFINEMENT.md` and `documentation/QA.md`. Technical details and sources are in `documentation/ARCHITECTURE.md`, and `documentation/ASSET-CREDITS.md`. Open-font license notices are included in `assets/fonts/`.
+See `documentation/HOME-HERO.md` for the latest Home 1 layout and soft wave artwork. Previous visual/navigation corrections are in `documentation/PRECISION.md`. The preceding targeted redesign is recorded in `documentation/REDESIGN.md`. Earlier records are in `documentation/REFINEMENT.md` and `documentation/QA.md`. Technical details and sources are in `documentation/ARCHITECTURE.md`, and `documentation/ASSET-CREDITS.md`. Open-font license notices are included in `assets/fonts/`.
