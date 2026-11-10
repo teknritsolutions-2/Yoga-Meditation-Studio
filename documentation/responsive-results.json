@@ -1,0 +1,258 @@
+{
+  "date": "2026-11-10",
+  "baselineCommit": "610d97c",
+  "baselineConfigurations": 390,
+  "geometry": [
+    {
+      "engine": "chromium",
+      "configurations": 1380,
+      "widths": [
+        320,
+        360,
+        390,
+        425,
+        430,
+        599,
+        600,
+        680,
+        681,
+        699,
+        700,
+        701,
+        768,
+        820,
+        959,
+        960,
+        961,
+        1024,
+        1180,
+        1190,
+        1191,
+        1280,
+        1440
+      ],
+      "modes": [
+        "dark ltr",
+        "dark rtl",
+        "light ltr",
+        "light rtl"
+      ],
+      "errors": [],
+      "failedResponses": [],
+      "failures": 0,
+      "states": {
+        "home": 92,
+        "home2": 92,
+        "classes": 92,
+        "instructors": 92,
+        "memberships": 92,
+        "contact": 92,
+        "login": 92,
+        "signup": 92,
+        "dash-overview": 92,
+        "dash-book": 92,
+        "dash-sessions": 92,
+        "dash-usage": 92,
+        "dash-membership": 92,
+        "dash-notifications": 92,
+        "dash-profile": 92
+      }
+    },
+    {
+      "engine": "webkit",
+      "configurations": 300,
+      "widths": [
+        320,
+        390,
+        820,
+        1024,
+        1440
+      ],
+      "modes": [
+        "dark ltr",
+        "dark rtl",
+        "light ltr",
+        "light rtl"
+      ],
+      "errors": [],
+      "failedResponses": [],
+      "failures": 0,
+      "states": {
+        "home": 20,
+        "home2": 20,
+        "classes": 20,
+        "instructors": 20,
+        "memberships": 20,
+        "contact": 20,
+        "login": 20,
+        "signup": 20,
+        "dash-overview": 20,
+        "dash-book": 20,
+        "dash-sessions": 20,
+        "dash-usage": 20,
+        "dash-membership": 20,
+        "dash-notifications": 20,
+        "dash-profile": 20
+      }
+    }
+  ],
+  "interactionSuites": {
+    "chromium": {
+      "checks": 478,
+      "errors": [],
+      "failures": []
+    },
+    "webkit": {
+      "checks": 478,
+      "errors": [],
+      "failures": []
+    }
+  },
+  "focusedFinalInteractionSuitesIncludingLedgerHomeEnd": {
+    "chromium": {
+      "checks": 46,
+      "errors": [],
+      "failures": []
+    },
+    "webkit": {
+      "checks": 46,
+      "errors": [],
+      "failures": []
+    }
+  },
+  "functionalRegression": {
+    "checks": [
+      "index.html @ 320",
+      "index.html @ 390",
+      "index.html @ 768",
+      "index.html @ 1024",
+      "index.html @ 1280",
+      "index.html @ 1440",
+      "index.html dark RTL @ 390",
+      "index.html dark RTL @ 1280",
+      "pages/home2.html @ 320",
+      "pages/home2.html @ 390",
+      "pages/home2.html @ 768",
+      "pages/home2.html @ 1024",
+      "pages/home2.html @ 1280",
+      "pages/home2.html @ 1440",
+      "pages/home2.html dark RTL @ 390",
+      "pages/home2.html dark RTL @ 1280",
+      "pages/classes.html @ 320",
+      "pages/classes.html @ 390",
+      "pages/classes.html @ 768",
+      "pages/classes.html @ 1024",
+      "pages/classes.html @ 1280",
+      "pages/classes.html @ 1440",
+      "pages/classes.html dark RTL @ 390",
+      "pages/classes.html dark RTL @ 1280",
+      "pages/instructors.html @ 320",
+      "pages/instructors.html @ 390",
+      "pages/instructors.html @ 768",
+      "pages/instructors.html @ 1024",
+      "pages/instructors.html @ 1280",
+      "pages/instructors.html @ 1440",
+      "pages/instructors.html dark RTL @ 390",
+      "pages/instructors.html dark RTL @ 1280",
+      "pages/memberships.html @ 320",
+      "pages/memberships.html @ 390",
+      "pages/memberships.html @ 768",
+      "pages/memberships.html @ 1024",
+      "pages/memberships.html @ 1280",
+      "pages/memberships.html @ 1440",
+      "pages/memberships.html dark RTL @ 390",
+      "pages/memberships.html dark RTL @ 1280",
+      "pages/contact.html @ 320",
+      "pages/contact.html @ 390",
+      "pages/contact.html @ 768",
+      "pages/contact.html @ 1024",
+      "pages/contact.html @ 1280",
+      "pages/contact.html @ 1440",
+      "pages/contact.html dark RTL @ 390",
+      "pages/contact.html dark RTL @ 1280",
+      "pages/login.html @ 320",
+      "pages/login.html @ 390",
+      "pages/login.html @ 768",
+      "pages/login.html @ 1024",
+      "pages/login.html @ 1280",
+      "pages/login.html @ 1440",
+      "pages/login.html dark RTL @ 390",
+      "pages/login.html dark RTL @ 1280",
+      "pages/signup.html @ 320",
+      "pages/signup.html @ 390",
+      "pages/signup.html @ 768",
+      "pages/signup.html @ 1024",
+      "pages/signup.html @ 1280",
+      "pages/signup.html @ 1440",
+      "pages/signup.html dark RTL @ 390",
+      "pages/signup.html dark RTL @ 1280",
+      "pages/dashboard.html @ 320",
+      "pages/dashboard.html @ 390",
+      "pages/dashboard.html @ 768",
+      "pages/dashboard.html @ 1024",
+      "pages/dashboard.html @ 1280",
+      "pages/dashboard.html @ 1440",
+      "pages/dashboard.html dark RTL @ 390",
+      "pages/dashboard.html dark RTL @ 1280",
+      "Initial ten-pack balance 6",
+      "Book: credits 6\u21925",
+      "Duplicate prevented, balance unchanged",
+      "Cancel restores one credit, repeated cancellation prevented",
+      "State persists across refresh",
+      "Renewal preview saves request without applying plan/payment",
+      "Unlimited bookings do not fabricate a credit count",
+      "Reset restores consistent sample state and validity/history dates",
+      "Style/level filters and reset",
+      "Practice finder matches goal and duration",
+      "Plan comparison derives visits from sample data",
+      "Enquiry preview validates and does not claim sending",
+      "Guest booking opens directly accessible dashboard with selected session",
+      "Dashboard drawer opens/closes with Escape",
+      "Mobile navigation and persistent theme/RTL",
+      "Reduced motion stops decorative animation"
+    ],
+    "errors": [],
+    "failures": []
+  },
+  "timetableComparisonAuthentication": {
+    "checks": [
+      "Seven consecutive Monday\u2013Sunday dates each expose the matching four catalog sessions",
+      "Keyboard/RTL day selection and View/Book preserve the selected session through direct dashboard access",
+      "All four comparison plans retain correct capped/unlimited math at frequencies 1, 3, and 7",
+      "Separate auth pages: native validation, confirmation matching, password visibility, 320px options row, actual provider logos, accurate unconnected feedback, no credential transmission/storage",
+      "Direct dashboard remains accessible with its own navigation and unchanged six-credit balance",
+      "Removed motion/practice widgets, logical footer groups, and reduced-motion entrance behavior"
+    ],
+    "errors": []
+  },
+  "edgeCases": {
+    "checks": [
+      "Expired membership blocks booking",
+      "Exhausted single-session credit blocks booking",
+      "15-day rollover preserves booking history and credit accounting",
+      "All nine pages work under a GitHub Pages-style /studio/ subpath",
+      "Home dropdown and keyboard-operated practice tabs",
+      "Static artwork, floating back-to-top, and sticky header"
+    ],
+    "errors": []
+  },
+  "homeHero": {
+    "checks": 24,
+    "errors": [],
+    "failures": []
+  },
+  "selectedStateCaptures": 56,
+  "authoredReferences": {
+    "checked": 167,
+    "missing": 0
+  },
+  "productionJavaScriptSyntaxFiles": 9,
+  "screenshots": {
+    "chromiumFullPage": 120,
+    "webkitFullPage": 105
+  },
+  "limits": [
+    "Headless browser viewport tests; no physical-device or Safari certification.",
+    "Existing frontend-only integrations remain frontend-only."
+  ]
+}

@@ -94,6 +94,12 @@ const { chromium } = require(process.env.SOLA_PLAYWRIGHT || "playwright"),
             Math.abs(metrics.photo.width / metrics.photo.height - 1400 / 933) <
               0.01,
           );
+        } else if (width <= 960) {
+          assert(metrics.photo.bottom <= metrics.story.y + 1);
+          assert(
+            Math.abs(metrics.photo.width / metrics.photo.height - 1400 / 933) <
+              0.01,
+          );
         } else {
           assert(Math.abs(metrics.photo.y - metrics.story.y) < 1);
           assert(Math.abs(metrics.photo.height - metrics.story.height) < 1);

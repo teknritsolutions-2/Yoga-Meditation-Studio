@@ -28,7 +28,7 @@ Open `http://127.0.0.1:4173`. Use HTTP preview for consistent local workspace st
 
 ## Frontend workspace behavior
 
-Choose **Member Dashboard** in the footer or open `pages/dashboard.html` directly. There is no login gate. The initial member has a Ten-Class Pack: 10 credits, 3 attended sample classes, 1 upcoming booking, and 6 available credits.
+Choose **Dashboard** in the navigation or footer, or open `pages/dashboard.html` directly. There is no login gate. The initial member has a Ten-Class Pack: 10 credits, 3 attended sample classes, 1 upcoming booking, and 6 available credits.
 
 - Booking holds one credit. Duplicate, overlapping, past, out-of-validity, and exhausted-credit bookings are blocked.
 - Cancelling an upcoming demo session restores its credit once. This is an illustrative cancellation policy.
@@ -68,4 +68,4 @@ URLs and local font/image paths work under a repository subpath as well as a dom
 
 ## Verification and asset records
 
-See `documentation/HOME-HERO.md` for the latest Home 1 layout and soft wave artwork. Previous visual/navigation corrections are in `documentation/PRECISION.md`. The preceding targeted redesign is recorded in `documentation/REDESIGN.md`. Earlier records are in `documentation/REFINEMENT.md` and `documentation/QA.md`. Technical details and sources are in `documentation/ARCHITECTURE.md`, and `documentation/ASSET-CREDITS.md`. Open-font license notices are included in `assets/fonts/`.
+See [the responsive audit](documentation/RESPONSIVE-AUDIT.md) for the current sitewide mobile/tablet corrections, browser coverage, before/after screenshots and lessons from previous projects. `documentation/HOME-HERO.md` records the Home 1 layout and soft wave artwork. Previous visual/navigation corrections are in `documentation/PRECISION.md`. The preceding targeted redesign is recorded in `documentation/REDESIGN.md`. Earlier records are in `documentation/REFINEMENT.md` and `documentation/QA.md`. Technical details and sources are in `documentation/ARCHITECTURE.md`, and `documentation/ASSET-CREDITS.md`. Open-font license notices are included in `assets/fonts/`.

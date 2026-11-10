@@ -193,7 +193,7 @@ if ($("#classes-week")) {
     $("#plan-comparison").innerHTML = PLANS.map((p) => {
       const expected = Math.ceil((n * p.days) / 7),
         used = p.credits === null ? expected : Math.min(p.credits, expected);
-      return `<article class="comparison-card"><div><span class="eyebrow">${p.days}-day validity</span><h3>${p.name}</h3></div><div class="comparison-cost">~${money(Math.ceil(p.price / used))}<span>per attended class</span></div><dl><div><dt>Estimated visits</dt><dd>${used}</dd></div><div><dt>Access</dt><dd>${p.credits === null ? "Unlimited regular classes" : p.credits + (p.credits === 1 ? " class credit" : " class credits")}</dd></div></dl></article>`;
+      return `<article class="comparison-card"><div><span class="eyebrow">${p.days}-day validity</span><h3>${p.name}</h3></div><div class="comparison-cost"><bdi>~${money(Math.ceil(p.price / used))}</bdi><span>per attended class</span></div><dl><div><dt>Estimated visits</dt><dd>${used}</dd></div><div><dt>Access</dt><dd>${p.credits === null ? "Unlimited regular classes" : p.credits + (p.credits === 1 ? " class credit" : " class credits")}</dd></div></dl></article>`;
     }).join("");
   }
   $("#classes-week").addEventListener("input", compare);

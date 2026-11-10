@@ -32,6 +32,14 @@ function dashboardShell() {
       !$(".dashboard-shell").classList.contains("drawer-open");
   };
   sync();
+  $(".dashboard-sidebar").addEventListener("click", (e) => {
+    if (
+      e.target.closest("a") &&
+      mobile.matches &&
+      $(".dashboard-shell").classList.contains("drawer-open")
+    )
+      toggleDrawer(false);
+  });
   mobile.addEventListener("change", sync);
 }
 function toggleDrawer(force) {
@@ -182,7 +190,7 @@ function sessionsPage(s) {
 }
 function usagePage(s) {
   const p = PLANS.find((p) => p.id === s.plan);
-  return `${dashHeading("A little consistency goes a long way.", "Every visit and every credit, clearly accounted for.")}<section class="panel membership-summary">${usagePanel(s)}<p class="table-caption">${p.credits === null ? "Unlimited access covers regular classes without a credit limit." : "Used credits include past sessions and credits held by bookings. Cancel an upcoming class to return its credit."} Started ${dateLabel(s.started)}.</p></section><h2 class="dash-section-title">Your class ledger</h2><p class="scroll-hint">Scroll across to explore the full ledger →</p><div class="panel ledger-scroll" tabindex="0" role="region" aria-label="Class pack ledger"><table class="ledger"><caption class="sr-only">Practice booking and credit history</caption><thead><tr><th>Class</th><th>Date</th><th>Status</th><th>Credit impact</th></tr></thead><tbody>${s.history.map((h) => `<tr><td>${esc(h.name)}</td><td>${dateLabel(h.date)}</td><td><span class="status">Recorded</span></td><td>${p.credits === null ? "Included" : "−1"}</td></tr>`).join("")}${s.bookings
+  return `${dashHeading("A little consistency goes a long way.", "Every visit and every credit, clearly accounted for.")}<section class="panel membership-summary">${usagePanel(s)}<p class="table-caption">${p.credits === null ? "Unlimited access covers regular classes without a credit limit." : "Used credits include past sessions and credits held by bookings. Cancel an upcoming class to return its credit."} Started ${dateLabel(s.started)}.</p></section><h2 class="dash-section-title">Your class ledger</h2><p class="scroll-hint">Scroll across to explore the full ledger ${icon("arrow", 16)}</p><div class="panel ledger-scroll" tabindex="0" role="region" aria-label="Class pack ledger"><table class="ledger"><caption class="sr-only">Practice booking and credit history</caption><thead><tr><th>Class</th><th>Date</th><th>Status</th><th>Credit impact</th></tr></thead><tbody>${s.history.map((h) => `<tr><td>${esc(h.name)}</td><td>${dateLabel(h.date)}</td><td><span class="status">Recorded</span></td><td>${p.credits === null ? "Included" : "−1"}</td></tr>`).join("")}${s.bookings
     .map((b) => {
       const slot = slotForBooking(b);
       return `<tr><td>${slot ? practiceFor(slot).name : "Previous class"}</td><td>${slot ? dateLabel(slot.start) : dateLabel(b.created)}</td><td><span class="status">${b.status === "cancelled" ? "Cancelled" : b.status === "elapsed" ? "Elapsed" : "Planned"}</span></td><td>${b.status === "cancelled" ? (b.charged ? "0 · restored" : "Included") : b.charged ? (b.status === "elapsed" ? "−1 · used" : "−1 · held") : "Included"}</td></tr>`;
@@ -357,6 +365,20 @@ document.addEventListener("click", (e) => {
   }
 });
 document.addEventListener("keydown", (e) => {
+  const ledger = e.target.closest(".ledger-scroll");
+  if (
+    ledger === e.target &&
+    ["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)
+  ) {
+    e.preventDefault();
+    if (e.key === "Home") ledger.scrollLeft = 0;
+    else if (e.key === "End")
+      ledger.scrollLeft =
+        (ledger.scrollWidth - ledger.clientWidth) *
+        (getComputedStyle(ledger).direction === "rtl" ? -1 : 1);
+    else ledger.scrollBy({ left: e.key === "ArrowLeft" ? -80 : 80 });
+    return;
+  }
   if (!$(".dashboard-shell.drawer-open")) return;
   if (e.key === "Escape") {
     toggleDrawer(false);

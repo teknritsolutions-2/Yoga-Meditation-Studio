@@ -13,7 +13,7 @@ function mountPublic() {
     ["contact", "Contact"],
   ];
   $("#site-header").innerHTML =
-    `<div class="nav-wrap">${brand()}<nav class="public-nav" aria-label="Main navigation" id="public-nav"><details class="home-menu"><summary ${["home", "home2"].includes(current) ? 'data-current="true"' : ""}>Home ${icon("chevron", 13)}</summary><div class="dropdown"><a href="${pageURL("home")}" ${current === "home" ? 'aria-current="page"' : ""}>Home 1 · The studio</a><a href="${pageURL("home2")}" ${current === "home2" ? 'aria-current="page"' : ""}>Home 2 · Your practice</a></div></details>${nav.map(([p, l]) => `<a href="${pageURL(p)}" ${current === p ? 'aria-current="page"' : ""}>${l}</a>`).join("")}<a class="mobile-login" href="${pageURL("login")}">Login</a></nav><div class="nav-tools">${utilities()}<a class="btn small nav-login" href="${pageURL("login")}">Login ${icon("arrow", 15)}</a><button class="icon-btn mobile-menu" aria-label="Open navigation" aria-expanded="false" aria-controls="public-nav">${icon("menu")}</button></div></div>`;
+    `<div class="nav-wrap">${brand()}<nav class="public-nav" aria-label="Main navigation" id="public-nav"><details class="home-menu"><summary ${["home", "home2"].includes(current) ? 'data-current="true"' : ""}>Home ${icon("chevron", 13)}</summary><div class="dropdown"><a href="${pageURL("home")}" ${current === "home" ? 'aria-current="page"' : ""}>Home 1 · The studio</a><a href="${pageURL("home2")}" ${current === "home2" ? 'aria-current="page"' : ""}>Home 2 · Your practice</a></div></details>${nav.map(([p, l]) => `<a href="${pageURL(p)}" ${current === p ? 'aria-current="page"' : ""}>${l}</a>`).join("")}<a class="mobile-login" href="${pageURL("login")}">Login</a></nav><div class="nav-tools">${utilities()}<a class="btn small nav-login" href="${pageURL("login")}">Login ${icon("arrow", 15)}</a><button class="icon-btn mobile-menu" aria-label="Open navigation" aria-expanded="false" aria-controls="public-nav">${icon("menu")}</button></div></div><button class="nav-backdrop" aria-label="Close navigation" tabindex="-1"></button>`;
   const footerGroups = [
     [
       "Explore",
@@ -36,16 +36,57 @@ function mountPublic() {
   ];
   $("#site-footer").innerHTML =
     `<div class="wrap"><div class="footer-top"><div class="footer-brand">${brand()}<p>Move freely. Find your center.<br>A little space for a lot more you.</p></div>${footerGroups.map(([title, links]) => `<nav class="footer-group" aria-label="${title}"><h3>${title}</h3><div class="footer-links">${links.map(([p, label]) => `<a href="${pageURL(p)}">${label}</a>`).join("")}</div></nav>`).join("")}</div><div class="footer-bottom"><span>© ${new Date().getFullYear()} Sola Studio.</span><button class="text-button" id="asset-credits">Artwork & photography credits ↗</button></div></div>`;
-  const mobile = $(".mobile-menu");
-  mobile.addEventListener("click", () => {
-    const open = mobile.getAttribute("aria-expanded") !== "true";
-    mobile.setAttribute("aria-expanded", open);
+  const mobile = $(".mobile-menu"),
+    header = $("#site-header"),
+    navPanel = $(".public-nav");
+  let previousOverflow = "";
+  function setPublicMenu(open, restoreFocus = true) {
+    if (open === (mobile.getAttribute("aria-expanded") === "true")) return;
+    mobile.setAttribute("aria-expanded", String(open));
     mobile.setAttribute(
       "aria-label",
       open ? "Close navigation" : "Open navigation",
     );
     mobile.innerHTML = icon(open ? "close" : "menu");
-    $(".public-nav").classList.toggle("open", open);
+    navPanel.classList.toggle("open", open);
+    header.toggleAttribute("data-menu-open", open);
+    for (const el of [$("main"), $("#site-footer"), $("#back-top")])
+      if (el) el.inert = open;
+    if (open) {
+      previousOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      $(".home-menu summary").focus({ preventScroll: true });
+    } else {
+      document.body.style.overflow = previousOverflow;
+      $$(".home-menu[open]").forEach((d) => (d.open = false));
+      if (restoreFocus) mobile.focus({ preventScroll: true });
+    }
+  }
+  mobile.addEventListener("click", () =>
+    setPublicMenu(mobile.getAttribute("aria-expanded") !== "true"),
+  );
+  $(".nav-backdrop").addEventListener("click", () => setPublicMenu(false));
+  navPanel.addEventListener("click", (e) => {
+    if (e.target.closest("a")) setPublicMenu(false, false);
+  });
+  matchMedia("(max-width:1190px)").addEventListener("change", (e) => {
+    if (!e.matches) setPublicMenu(false, false);
+  });
+  header.addEventListener("keydown", (e) => {
+    if (e.key !== "Tab" || mobile.getAttribute("aria-expanded") !== "true")
+      return;
+    const focusable = $$("a,button,summary", header).filter(
+      (el) => el.tabIndex >= 0 && el.getClientRects().length,
+    );
+    const first = focusable[0],
+      last = focusable.at(-1);
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus({ preventScroll: true });
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus({ preventScroll: true });
+    }
   });
   $("#asset-credits").addEventListener("click", () =>
     dialog(
@@ -100,12 +141,7 @@ $("#modal").addEventListener("click", (e) => {
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     const menu = $(".public-nav.open");
-    if (menu) {
-      menu.classList.remove("open");
-      $(".mobile-menu").setAttribute("aria-expanded", "false");
-      $(".mobile-menu").innerHTML = icon("menu");
-      $(".mobile-menu").focus();
-    }
+    if (menu) $(".mobile-menu").click();
     $$(".home-menu[open]").forEach((d) => (d.open = false));
   }
 });

@@ -35,3 +35,10 @@
 [dir="rtl"] select {
   background-position: left 16px center;
 }
+
+[dir="rtl"] .usage-numbers > * {
+  unicode-bidi: plaintext;
+}
+[dir="rtl"] .scroll-hint svg {
+  transform: scaleX(-1);
+}

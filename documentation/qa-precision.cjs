@@ -88,7 +88,11 @@ const fs = require("node:fs");
         );
         if (width <= 1190) {
           await page.locator(".mobile-menu").click();
-          assert(await page.locator(".mobile-login").isVisible());
+          assert(
+            await page
+              .locator(width <= 700 ? ".mobile-login" : ".nav-login")
+              .isVisible(),
+          );
           assert(
             (await page.locator(".mobile-login").getAttribute("href")).endsWith(
               "login.html",
